@@ -5,13 +5,15 @@ body {
     margin-top: 15px;
     background-color: #FAFAFA;
 }
-
-
 @font-face {
-    font-family:'Dosis';
-    src: url(fonts/Dosis-Regular.ttf/Dosis-Bold.ttf);
+    font-family:'dosis';
+    src: url(fonts/Dosis-Bold.ttf);
 }
 
+@font-face {
+    font-family:'dosis-r';
+    src: url(fonts/Dosis-Regular.ttf);
+}
 
 
 /****** NAV *******/
@@ -100,15 +102,33 @@ footer p {
     background-color: #8EACCD;
 }
 
-.oplevelser h1{
-    font-family: 'dosis';
+.oplevelser h2{
+    font-family: 'dosis-r';
+    font-size: 30pt;
 }
 
 
 .imgKarusel{
     display: flex;
-    justify-content: center;
 }
+
+#førstefoto{
+margin-top: 10%;
+margin-right: 10%;
+}
+
+#midterfoto{
+    padding-right: 10%;
+}
+
+
+#sidstefoto{
+    height: 150%;
+    margin-top: 17%;
+
+}
+
+
 
 .oplevelser p {
     max-width: 600px;
