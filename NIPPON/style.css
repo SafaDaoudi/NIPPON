@@ -1,0 +1,176 @@
+/**************** GENERALT ****************/
+body {
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+    background-color: #FAFAFA;
+}
+
+
+
+/****** NAV *******/
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #7895CB;
+}
+nav a {
+    text-decoration: none;
+    color: #FEFAEE;
+}
+
+/****** FOOTER *****/
+footer{
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+    background-color: #19376D;
+    margin-top: 100px;
+}
+footer div {
+    padding-top: 10px;
+}
+footer h5 {
+    color: crimson;
+}
+footer p {
+    color: #FAFAFA;
+}
+
+/****** FORSIDE *****/
+.velkomstimg{
+    display: flex;
+    justify-content: center;
+    
+    background-color: #AFD3E2;
+    height: 500px;
+}
+
+.bestilbtn {
+    display: flex;
+    justify-content: center;
+    margin-top: 400px;
+    height: 50px;
+    width: 100px;
+
+    background-color: #19376D;
+    color: azure;
+}
+
+.oplevelser{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 90px;
+    padding-bottom: 50px;
+
+    background-color: #8EACCD;
+}
+
+.imgKarusel{
+    display: flex;
+    justify-content: center;
+}
+
+.oplevelser p {
+    max-width: 600px;
+}
+
+hr{
+    height: 2px;
+    background-color: #068FFF;
+    margin-bottom: 90px;
+}
+
+.guide {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #AFD3E2;
+}
+
+.læsMerebtn {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 100px;
+    margin-bottom: 20px;
+
+    background-color: #19376D;
+    color: azure;
+}
+
+.omNippon {
+    display: flex;
+    justify-content: center;
+    max-height: fit-content;
+    margin-top: 100px;
+
+    background-color: #7895CB;
+}
+
+.omNippon p {
+    max-width: 600px;
+    line-height: 40pt;
+    text-align: center;
+}
+
+.hvorfor {
+    background-color: #AFD3E2;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.hvorforIndhold {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+}
+
+/***** card ****/
+.udvalg {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+
+}
+.card {
+    background-color: #8EACCD;
+    height: 300px;
+    width: 200px;
+}
+
+.planlægbtn {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    width: 200px;
+    background-color: #19376D;
+    color: #FEFAEE;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/***** 404 ****/
+.fejlSide {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
