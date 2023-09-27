@@ -5,38 +5,6 @@ body {
     background-color: #FAFAFA;
 }
 
-
-
-/****** NAV *******/
-nav {
-    display: flex;
-    justify-content: space-around;
-    background-color: #7895CB;
-    padding-top: 10px;
-}
-nav a {
-    text-decoration: none;
-    color: #FEFAEE;
-}
-
-/****** FOOTER *****/
-footer{
-    display: flex;
-    justify-content: space-around;
-    height: 200px;
-    background-color: #19376D;
-}
-footer div {
-    padding-top: 10px;
-}
-footer h5 {
-    color: crimson;
-}
-footer p {
-    color: #FAFAFA;
-    line-height: 20pt;
-}
-
 /****** FORSIDE *****/
 .velkomstimg{
     display: flex;
@@ -64,20 +32,12 @@ footer p {
     align-items: center;
     margin-top: 90px;
     padding-bottom: 50px;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 95b681ae276cafb8ba3cd028632de8d8e82fbdb5
 
     background-color: #8EACCD;
->>>>>>> 2815132724dd04560ec870773fbb33c2acc9e5e1
 }
 
 .imgKarusel{
     display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
     margin-top: 5%;
     margin-left: -5%;
 }
@@ -117,7 +77,6 @@ border-radius: 10%;
 
 
 hr{
-=======
     justify-content: center;
 }
 
@@ -126,8 +85,6 @@ hr{
 }
 
 .forsideHR{
->>>>>>> 2815132724dd04560ec870773fbb33c2acc9e5e1
-=======
     justify-content: center;
 }
 
@@ -136,7 +93,6 @@ hr{
 }
 
 .forsideHR{
->>>>>>> 95b681ae276cafb8ba3cd028632de8d8e82fbdb5
     height: 2px;
     background-color: #068FFF;
     margin-bottom: 90px;
