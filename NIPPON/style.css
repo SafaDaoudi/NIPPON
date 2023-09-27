@@ -99,7 +99,6 @@ footer p {
     align-items: center;
     margin-top: 90px;
     padding-bottom: 50px;
-    background-color: #8EACCD;
 }
 
 .oplevelser h2{
@@ -110,11 +109,17 @@ footer p {
 
 .imgKarusel{
     display: flex;
+    margin-top: 5%;
+    margin-left: -5%;
 }
 
 #førstefoto{
 margin-top: 10%;
 margin-right: 10%;
+opacity: 0.4;
+border-radius: 10%;
+
+
 }
 
 #midterfoto{
@@ -125,14 +130,22 @@ margin-right: 10%;
 #sidstefoto{
     height: 150%;
     margin-top: 17%;
+    opacity: 0.4;
+    border-radius: 10%;
+
 
 }
 
 
 
 .oplevelser p {
-    max-width: 600px;
+    max-width: 45%;
+    text-align: justify;
+    line-height: 200%;
 }
+
+
+
 
 hr{
     height: 2px;
