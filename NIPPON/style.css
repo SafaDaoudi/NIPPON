@@ -2,18 +2,9 @@
 body {
     margin: 0;
     padding: 0;
-    margin-top: 15px;
     background-color: #FAFAFA;
 }
-@font-face {
-    font-family:'dosis';
-    src: url(fonts/Dosis-Bold.ttf);
-}
 
-@font-face {
-    font-family:'dosis-r';
-    src: url(fonts/Dosis-Regular.ttf);
-}
 
 
 /****** NAV *******/
@@ -21,6 +12,7 @@ nav {
     display: flex;
     justify-content: space-around;
     background-color: #7895CB;
+    padding-top: 10px;
 }
 nav a {
     text-decoration: none;
@@ -33,7 +25,6 @@ footer{
     justify-content: space-around;
     height: 200px;
     background-color: #19376D;
-    margin-top: 100px;
 }
 footer div {
     padding-top: 10px;
@@ -43,14 +34,15 @@ footer h5 {
 }
 footer p {
     color: #FAFAFA;
+    line-height: 20pt;
 }
 
 /****** FORSIDE *****/
 .velkomstimg{
     display: flex;
     justify-content: center;
-
-    background-image: url(billeder/dumplingskålen-Redigeret-1919x503.jpg);
+    
+    background-color: #AFD3E2;
     height: 500px;
 }
 
@@ -60,37 +52,10 @@ footer p {
     margin-top: 400px;
     height: 50px;
     width: 100px;
-    margin-left: -50px;
- 
-    background-color: #27406b;
-    border: 2px solid #ff6c5c;
-    border-radius: 10px;
-    color: #DAD9CD;
+
+    background-color: #19376D;
+    color: azure;
 }
-
-.bestilbtn:hover{
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.1);  
-    cursor: pointer; 
-    transition: 1.1s;
-}
-
-.bestilbtn p{
-    font-family: 'dosis';
-    font-size: 20pt;
-    margin-top: 5%;
-}
-
-
-
-
-
-
-
-
-
-
 
 .oplevelser{
     display: flex;
@@ -99,45 +64,24 @@ footer p {
     align-items: center;
     margin-top: 90px;
     padding-bottom: 50px;
+
     background-color: #8EACCD;
 }
 
-.oplevelser h2{
-    font-family: 'dosis-r';
-    font-size: 30pt;
-}
-
-
 .imgKarusel{
     display: flex;
+    justify-content: center;
 }
-
-#førstefoto{
-margin-top: 10%;
-margin-right: 10%;
-}
-
-#midterfoto{
-    padding-right: 10%;
-}
-
-
-#sidstefoto{
-    height: 150%;
-    margin-top: 17%;
-
-}
-
-
 
 .oplevelser p {
-    max-width: 600px;
+    max-width: 50%;
 }
 
-hr{
+.forsideHR{
     height: 2px;
     background-color: #068FFF;
     margin-bottom: 90px;
+    width: 50%;
 }
 
 .guide {
@@ -187,18 +131,63 @@ hr{
     text-align: left;
 }
 
-/***** card ****/
+/***** Retter ****/
+.retterBaggrund {
+    background-color: #DAC0A3;
+    margin-left: 150px;
+    margin-right: 150px;
+    padding-bottom: 50px;
+}
+
+.småbtn {
+    background-color: #AFD3E2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.allergi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #068FFF;
+    width: 80px;
+    height: 80px;
+}
+
+.allergi img {
+    width: 80%;
+}
+
+.protein {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #068FFF;
+    width: 80px;
+    height: 80px;
+}
+
+.protein img {
+    width: 80%;
+}
+
 .udvalg {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
+    margin-top: 0;
+    text-align: center;
+    line-height: 30pt;
+    padding-top: 50px;
 }
 
 .cards {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    max-width: 60%;
+    max-width: 90%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
@@ -221,6 +210,89 @@ hr{
     margin-left: auto;
     margin-right: auto;
 }
+
+
+/***** BETALING ******/
+
+.bestiling table {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    border: #068FFF;
+}
+
+.bestiling th {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.prisbox {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #8EACCD;
+    max-width: 600px;
+}
+
+.prisimg {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.prisbox h2{
+    display: flex;
+    justify-content: center;
+}
+
+.betalingHR {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    background-color: #068FFF;
+    border: none;
+    height: 2px;
+
+}
+
+.kortoplysninger {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+.betalbtn {
+    display: flex;
+    justify-content: center;
+    background-color: #19376D;
+    color: #FAFAFA;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Altbetalbtn {
+    display: flex;
+    justify-content: center;
+    background-color: #19376D;
+    color: #FAFAFA;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 220px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 
 /***** 404 ****/
 .fejlSide {
