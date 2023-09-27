@@ -65,7 +65,10 @@ footer p {
     margin-top: 90px;
     padding-bottom: 50px;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 95b681ae276cafb8ba3cd028632de8d8e82fbdb5
 
     background-color: #8EACCD;
 >>>>>>> 2815132724dd04560ec870773fbb33c2acc9e5e1
@@ -73,6 +76,7 @@ footer p {
 
 .imgKarusel{
     display: flex;
+<<<<<<< HEAD
 <<<<<<< HEAD
     margin-top: 5%;
     margin-left: -5%;
@@ -123,6 +127,16 @@ hr{
 
 .forsideHR{
 >>>>>>> 2815132724dd04560ec870773fbb33c2acc9e5e1
+=======
+    justify-content: center;
+}
+
+.oplevelser p {
+    max-width: 50%;
+}
+
+.forsideHR{
+>>>>>>> 95b681ae276cafb8ba3cd028632de8d8e82fbdb5
     height: 2px;
     background-color: #068FFF;
     margin-bottom: 90px;
