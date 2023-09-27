@@ -7,6 +7,12 @@ body {
 }
 
 
+@font-face {
+    font-family:'Dosis';
+    src: url(fonts/Dosis-Regular.ttf/Dosis-Bold.ttf);
+}
+
+
 
 /****** NAV *******/
 nav {
@@ -41,8 +47,8 @@ footer p {
 .velkomstimg{
     display: flex;
     justify-content: center;
-    
-    background-image: url(fotos/dumplingskål.jpg);
+
+    background-image: url(billeder/dumplingskålen-Redigeret-1919x503.jpg);
     height: 500px;
 }
 
@@ -52,10 +58,37 @@ footer p {
     margin-top: 400px;
     height: 50px;
     width: 100px;
-
-    background-color: #19376D;
-    color: azure;
+    margin-left: -50px;
+ 
+    background-color: #27406b;
+    border: 2px solid #ff6c5c;
+    border-radius: 10px;
+    color: #DAD9CD;
 }
+
+.bestilbtn:hover{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.1);  
+    cursor: pointer; 
+    transition: 1.1s;
+}
+
+.bestilbtn p{
+    font-family: 'dosis';
+    font-size: 20pt;
+    margin-top: 5%;
+}
+
+
+
+
+
+
+
+
+
+
 
 .oplevelser{
     display: flex;
@@ -64,9 +97,13 @@ footer p {
     align-items: center;
     margin-top: 90px;
     padding-bottom: 50px;
-
     background-color: #8EACCD;
 }
+
+.oplevelser h1{
+    font-family: 'dosis';
+}
+
 
 .imgKarusel{
     display: flex;
