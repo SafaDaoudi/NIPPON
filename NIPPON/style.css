@@ -214,43 +214,52 @@ border-radius: 10%;
     margin-left: 150px;
     margin-right: 150px;
     padding-bottom: 50px;
-}
-
-.småbtn {
-    background-color: #AFD3E2;
+    z-index: 1;
+ }
+ 
+ 
+ .småbtn {
+    position: absolute;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-}
-
-.allergi {
+    top: 200px;
+    z-index: 2;
+ }
+ 
+ 
+ .allergi {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #068FFF;
     width: 80px;
     height: 80px;
-}
-
-.allergi img {
+ }
+ 
+ 
+ .allergi img {
     width: 80%;
-}
-
-.protein {
+ }
+ 
+ 
+ .protein {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #068FFF;
     width: 80px;
     height: 80px;
-}
-
-.protein img {
+ }
+ 
+ 
+ .protein img {
     width: 80%;
-}
-
-.udvalg {
+ }
+ 
+ 
+ .udvalg {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
@@ -258,9 +267,10 @@ border-radius: 10%;
     text-align: center;
     line-height: 30pt;
     padding-top: 50px;
-}
-
-.cards {
+ }
+ 
+ 
+ .cards {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -269,15 +279,18 @@ border-radius: 10%;
     margin-right: auto;
     margin-bottom: 50px;
     flex-wrap: wrap;
-
-}
-.card {
+    top: 50px;
+ 
+ 
+ }
+ .card {
     background-color: #8EACCD;
     height: 300px;
     width: 200px;
-}
-
-.planlægbtn {
+ }
+ 
+ 
+ .planlægbtn {
     display: flex;
     justify-content: center;
     height: 50px;
@@ -286,8 +299,8 @@ border-radius: 10%;
     color: #FEFAEE;
     margin-left: auto;
     margin-right: auto;
-}
-
+ }
+ 
 
 /***** BETALING ******/
 
@@ -370,6 +383,53 @@ border-radius: 10%;
     margin-left: auto;
 }
 
+/****** KVITTERING ******/
+
+
+.kvitteringMain {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    align-items: center;
+    border: solid black 3px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+ 
+ 
+ 
+ 
+    background-color: #7895CB;
+ }
+ 
+ 
+ .kvitteringMain p {
+    text-align: center;
+ }
+ 
+ 
+ .kvitteringimg {
+    display: flex;
+    justify-content: center;
+    height: 220px;
+    width: 460px;
+ }
+ 
+ 
+ .forsidebtn {
+    display: flex;
+    justify-content: center;
+    background-color: #19376D;
+    color: #FAFAFA;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border: solid red 2px;
+    border-radius: 12px;
+    width: 200px;
+ }
+ 
 
 /***** 404 ****/
 .fejlSide {
