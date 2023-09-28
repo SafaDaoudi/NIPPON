@@ -10,17 +10,17 @@ body {
 /**************** FONTS ****************/
 @font-face {
     font-family: 'Dosis-bold';
-    src: url(fonts/Dosis-Bold.ttf);
+    src: url(fonts/Dosis-bold.ttf);
 }
 
 @font-face {
     font-family: 'Dosis-regular';
-    src: url(fonts/Dosis-Regular.ttf);
+    src: url(fonts/Dosis-regular.ttf);
 }
 
 @font-face {
     font-family: 'Dosis-light';
-    src: url(fonts/Dosis-Light.ttf);
+    src: url(fonts/Dosis-light.ttf);
 }
 
 
@@ -138,7 +138,6 @@ border-radius: 10%;
 }
 
 /****** PILE TIL BILLEDEKARUSELLEN *****/
-
 .oplevelser p {
     max-width: 45%;
     text-align: justify;
@@ -147,7 +146,6 @@ border-radius: 10%;
 
     font-family: 'Dosis-regular';
 }
-
 
 /****** LINJE EFTER BILLEDEKARUSELLEN *****/
 
@@ -161,15 +159,26 @@ border-radius: 10%;
 }
 
 /****** Guide *****/
-
-
 .guide {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
+}
 
-    background-color: #AFD3E2;
+.guide h2{
+    font-family: 'Dosis-light';
+    font-size: 25pt;
+}
+
+.læsMerebtn a{
+    font-family: 'Dosis-regular';
+    font-size: 14pt;
+    text-decoration: none;
+    color: #27406b;
+
+    margin-top: 11%;
+    margin-left: 2%;  
 }
 
 .læsMerebtn {
@@ -177,11 +186,24 @@ border-radius: 10%;
     justify-content: center;
     height: 50px;
     width: 100px;
+    margin-top: 3%;
+
     margin-bottom: 20px;
 
-    background-color: #19376D;
-    color: azure;
+    background-color: white;
+
+    border-radius: 13px;
+    border: solid 2px #ff6c5c;
 }
+
+.læsMerebtn:hover{
+    cursor: pointer;
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.1);
+    transition: 1s;
+}
+
 
 .omNippon {
     display: flex;
