@@ -5,12 +5,33 @@ body {
     background-color: #FAFAFA;
 }
 
+/**************** FONTS ****************/
+@font-face {
+    font-family: 'Dosis-bold';
+    src: url(fonts/Dosis-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Dosis-regular';
+    src: url(fonts/Dosis-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Dosis-light';
+    src: url(fonts/Dosis-Light.ttf);
+}
+
+
+
+
+
+
 /****** FORSIDE *****/
 .velkomstimg{
     display: flex;
     justify-content: center;
     
-    background-color: #AFD3E2;
+    background-image: url(billeder/dumplingskålen-Redigeret-1919x503.jpg);
     height: 500px;
 }
 
@@ -20,10 +41,35 @@ body {
     margin-top: 400px;
     height: 50px;
     width: 100px;
-
-    background-color: #19376D;
-    color: azure;
+    background-color: #27406b;
+    border: solid #ff6c5c 2px;
+    border-radius: 10px;
 }
+
+.bestilbtn a{
+    text-decoration: none;
+    color: #fefaee;
+    font-family: 'Dosis-bold';
+    font-size: 14pt;
+    margin-top: 12%;
+}
+
+.bestilbtn:hover{
+    cursor: pointer;
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+
+/****** SECTION:oplevelser *****/
+
+.oplevelser h2{
+    font-family: 'Dosis-light';
+    font-size: 25pt;
+}
+
 
 .oplevelser{
     display: flex;
@@ -32,23 +78,49 @@ body {
     align-items: center;
     margin-top: 90px;
     padding-bottom: 50px;
-
-    background-color: #8EACCD;
 }
 
 .imgKarusel{
     display: flex;
-    margin-top: 5%;
+    margin-top: -20%;
     margin-left: -5%;
 }
+
+
+/****** PILE TIL BILLEDEKARUSELLEN *****/
+#venstrepil{
+    margin-left: -70%;
+    margin-top: 400px;
+    width: 70px;
+}
+#venstrepil:hover{
+    cursor: pointer;
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+#højrepil:hover{
+    cursor: pointer;
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.1);
+    transition: 1s;
+}
+#højrepil{
+    margin-right: -80%;
+    margin-top: -150px;
+    width: 70px;
+}
+
+/****** BILLEDER TIL FOTOKARUSELLEN *****/
 
 #førstefoto{
 margin-top: 10%;
 margin-right: 10%;
 opacity: 0.4;
 border-radius: 10%;
-
-
 }
 
 #midterfoto{
@@ -61,43 +133,31 @@ border-radius: 10%;
     margin-top: 17%;
     opacity: 0.4;
     border-radius: 10%;
-
-
 }
 
-
+/****** PILE TIL BILLEDEKARUSELLEN *****/
 
 .oplevelser p {
     max-width: 45%;
     text-align: justify;
+    justify-content: center;
     line-height: 200%;
+
+    font-family: 'Dosis-regular';
 }
 
 
-
-
-hr{
-    justify-content: center;
-}
-
-.oplevelser p {
-    max-width: 50%;
-}
+/****** LINJE EFTER BILLEDEKARUSELLEN *****/
 
 .forsideHR{
-    justify-content: center;
-}
-
-.oplevelser p {
-    max-width: 50%;
-}
-
-.forsideHR{
-    height: 2px;
-    background-color: #068FFF;
+    color: #ff6c5c;
+    background-color: #ff6c5c;
+    border:#ff6c5c;
+    height: 1px;
     margin-bottom: 90px;
     width: 50%;
 }
+
 
 .guide {
     display: flex;
