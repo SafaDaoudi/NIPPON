@@ -23,9 +23,20 @@ body {
     src: url(fonts/Dosis-light.ttf);
 }
 
+@font-face {
+    font-family: 'Dosis-semibold';
+    src: url(fonts/Dosis-SemiBold.ttf);
+}
 
+@font-face {
+    font-family: 'titweb-regular';
+    src: url(fonts/TitilliumWeb-Regular.ttf);
+}
 
-
+@font-face {
+    font-family: 'titweb-bolditalic';
+    src: url(fonts/TitilliumWeb-BoldItalic.ttf);
+}
 
 
 /****** FORSIDE *****/
@@ -158,7 +169,7 @@ border-radius: 10%;
     width: 50%;
 }
 
-/****** Guide *****/
+/****** Guide + Læs mere *****/
 .guide {
     display: flex;
     justify-content: space-around;
@@ -172,12 +183,12 @@ border-radius: 10%;
 }
 
 .læsMerebtn a{
-    font-family: 'Dosis-regular';
+    font-family: 'Dosis-bold';
     font-size: 14pt;
     text-decoration: none;
     color: #27406b;
 
-    margin-top: 11%;
+    margin-top: 7%;
     margin-left: 2%;  
 }
 
@@ -185,7 +196,7 @@ border-radius: 10%;
     display: flex;
     justify-content: center;
     height: 50px;
-    width: 100px;
+    width: 150px;
     margin-top: 3%;
 
     margin-bottom: 20px;
@@ -193,7 +204,7 @@ border-radius: 10%;
     background-color: white;
 
     border-radius: 13px;
-    border: solid 2px #ff6c5c;
+    border: solid 1px #F7685D;
 }
 
 .læsMerebtn:hover{
@@ -204,27 +215,46 @@ border-radius: 10%;
     transition: 1s;
 }
 
-
+/******* STEMNINGSBILLEDE + TEKST ********/
 .omNippon {
-    display: flex;
-    justify-content: center;
-    max-height: fit-content;
-    margin-top: 100px;
-
-    background-color: #7895CB;
-}
-
-.omNippon p {
-    max-width: 600px;
-    line-height: 40pt;
+    position: relative;
     text-align: center;
+    margin-top: 10%;
 }
+
+.centeredFORSIDE{
+    margin-bottom: 20%;
+}
+
+.omNippon p { 
+    max-width: 45%;
+    line-height: 40pt;
+    text-align: center; 
+    margin-top: -15%;
+    margin-left: 27%; 
+
+    font-size: 13pt;
+    font-family: 'titweb-bolditalic';
+    color: rgb(255, 255, 255);
+    
+}
+
+
+/******* HVORFOR NIPPON + FOTOKOLLAGE ********/
 
 .hvorfor {
     background-color: #AFD3E2;
     text-align: center;
     margin-top: 90px;
 }
+
+#hjørnefoto1{
+    width: 70%;
+}
+
+
+
+
 
 .hvorforIndhold {
     display: flex;
@@ -327,7 +357,6 @@ border-radius: 10%;
  
 
 /***** BETALING ******/
-
 .bestiling table {
     display: flex;
     justify-content: space-around;
