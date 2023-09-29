@@ -15,10 +15,7 @@
     src: url(fonts/Dosis-Light.ttf);
 }
 
-
-
 /****** NAV *******/
-
 header {
     position: fixed;
     z-index: 0;
@@ -29,15 +26,15 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #27406B;
-    opacity: 75%;
-    padding: 2.5%;
+    /*Fra Hex til RGBA - Hilsen Jesper. :)*/
+    background-color: rgba(39,64,107, 0.75);
+    /* Padding/Margin og lign. laves som px, for at bibeholde element-størrelser */
+    padding: 32px;
     width: 100%;
 }
 nav a {
     text-decoration: none;
     color: #FEFAEE;
-    opacity: 100%;
     font-family: 'Dosis-bold';
     font-size: 12pt;
 }
@@ -53,19 +50,36 @@ nav a {
     z-index: 2;
 }
 
-.loginClass {
-    margin-left: 10%;
-}
-
-#loginTekst {
-
-}
-
-#loginNav {
+/* Flytter dumpling bagved tekst */
+.loginLogo {
     position: absolute;
-    z-index: 1;
 }
 
+.loginLogo img {
+    width: 100%;
+}
+
+.loginText {
+    position:absolute;
+    z-index: 2;
+    color: black;
+}
+
+.loginClass {
+    width: 50px;
+    margin-left: 10%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FY!! */
+#loginTekst {
+ /* PUHA! */
+}
+
+/* :grimacing: */
 #udvalgNav {
     margin-right: 10%;
     margin-left: 25%;
@@ -73,10 +87,12 @@ nav a {
 
 .logo{
     position: absolute;
-    z-index: 1;
+    z-index: 10;
     margin-left: 10%;
     margin-top: 1%;
 }
+
+
 /****** FOOTER *****/
 footer{
     display: flex;

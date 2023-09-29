@@ -1,5 +1,11 @@
 /**************** GENERALT ****************/
 
+/* Normalisering af elementer => Stjerne-regel med m-0, p-0 og box-sizing */
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
