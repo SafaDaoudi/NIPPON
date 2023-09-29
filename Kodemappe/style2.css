@@ -1,0 +1,40 @@
+/****** FONTS ******/
+@font-face {
+    font-family: 'Dosis-bold';
+    src: url(fonts/Dosis-bold.ttf);
+}
+
+
+
+
+
+/****** NAV *******/
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #bbbfc6;
+    padding-top: 10px;
+}
+nav a {
+    text-decoration: none;
+    color: #FEFAEE;
+    font-family: 'Dosis-bold';
+}
+
+/****** FOOTER *****/
+footer{
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+    background-color: #19376D;
+}
+footer div {
+    padding-top: 10px;
+}
+footer h5 {
+    color: crimson;
+}
+footer p {
+    color: #FAFAFA;
+    line-height: 20pt;
+}
