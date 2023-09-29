@@ -78,14 +78,14 @@ body {
     margin-top: 400px;
     height: 50px;
     width: 100px;
-    background-color: #27406b;
+    background-color: #FAFAFA;
     border: solid #ff6c5c 2px;
     border-radius: 10px;
 }
 
 .bestilbtn a{
     text-decoration: none;
-    color: #fefaee;
+    color: #27406b;
     font-family: 'Dosis-bold';
     font-size: 14pt;
     margin-top: 12%;
@@ -254,7 +254,7 @@ body {
 .omNippon {
     position: relative;
     text-align: center;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 .omNippon img {
     width: 100%;
@@ -285,7 +285,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
+    margin-top: -10%;
     width: 100%;
 }
 
@@ -313,7 +313,6 @@ body {
     padding-right: 5%;
     margin-bottom: 10%;
     color: #27406b;
-
     
     font-family: 'titweb-regular';
 }
@@ -322,7 +321,7 @@ body {
 
 .hvorforTekst h4{
     font-family: 'titweb-bold';
-    font-size: 3vh;
+    font-size: 2.5vh;
     color: #45acA5;
 }
 
