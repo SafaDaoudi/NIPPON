@@ -48,8 +48,17 @@ nav a {
     width: 80%;
 }
 
+.navLink {
+    position: absolute;
+    z-index: 2;
+}
+
 .loginClass {
     margin-left: 10%;
+}
+
+#loginTekst {
+
 }
 
 #loginNav {
