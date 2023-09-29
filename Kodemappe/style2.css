@@ -1,26 +1,43 @@
-/****** FONTS ******/
+/***** FONTS ******/
+
 @font-face {
     font-family: 'Dosis-bold';
-    src: url(fonts/Dosis-bold.ttf);
+    src: url(fonts/Dosis-Bold.ttf);
 }
 
+@font-face {
+    font-family: 'Dosis-regular';
+    src: url(fonts/Dosis-Regular.ttf);
+}
 
+@font-face {
+    font-family: 'Dosis-light';
+    src: url(fonts/Dosis-Light.ttf);
+}
 
 
 
 /****** NAV *******/
 nav {
     display: flex;
-    justify-content: space-around;
-    background-color: #bbbfc6;
-    padding-top: 10px;
+    justify-content: space-evenly;
+    background-color: #27406B;
+    opacity: 40%;
+    padding-top: 6%;
 }
 nav a {
     text-decoration: none;
     color: #FEFAEE;
     font-family: 'Dosis-bold';
+    font-size: 10pt;
 }
 
+.logo{
+    position: absolute;
+    z-index: 1;
+    margin-left: 2%;
+    margin-top: 1%;
+}
 /****** FOOTER *****/
 footer{
     display: flex;

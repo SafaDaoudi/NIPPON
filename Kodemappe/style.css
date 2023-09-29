@@ -69,6 +69,7 @@ body {
     
     background-image: url(billeder/dumplingskålen-Redigeret-1919x503.jpg);
     height: 500px;
+    width: 100%;
 }
 
 .bestilbtn {
@@ -109,25 +110,34 @@ body {
 
 .oplevelser{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
+    width: 80%;
     margin-top: 90px;
     padding-bottom: 50px;
 }
 
 .imgKarusel{
     display: flex;
-    margin-top: -20%;
-    margin-left: -5%;
+    justify-content: center;
+    width: 20%;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.karusel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
 }
 
 
 /****** PILE TIL BILLEDEKARUSELLEN *****/
 #venstrepil{
-    margin-left: -70%;
-    margin-top: 400px;
-    width: 70px;
+    width: 10%;
 }
 #venstrepil:hover{
     cursor: pointer;
@@ -145,22 +155,22 @@ body {
     transition: 1s;
 }
 #højrepil{
-    margin-right: -80%;
-    margin-top: -150px;
-    width: 70px;
+    width: 10%;
 }
 
 /****** BILLEDER TIL FOTOKARUSELLEN *****/
 
 #førstefoto{
-margin-top: 10%;
-margin-right: 10%;
-opacity: 0.4;
-border-radius: 10%;
+    margin-top: 10%;
+    margin-right: 10%;
+    opacity: 0.4;
+    border-radius: 10%;
+    width: 100%;
 }
 
 #midterfoto{
     padding-right: 10%;
+    width: 100%;
 }
 
 
@@ -169,6 +179,7 @@ border-radius: 10%;
     margin-top: 17%;
     opacity: 0.4;
     border-radius: 10%;
+    width: 100%;
 }
 
 /****** PILE TIL BILLEDEKARUSELLEN *****/
@@ -243,6 +254,9 @@ border-radius: 10%;
     position: relative;
     text-align: center;
     margin-top: 10%;
+}
+.omNippon img {
+    width: 100%;
 }
 
 .centeredFORSIDE{
