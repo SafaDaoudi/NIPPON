@@ -45,10 +45,17 @@ nav a {
     width: 80%;
 }
 
-.navLink {
+/* Har kommenteret det her ud, fordi der ikke er noget der hedder "navLink" i HTML'en */
+/* .navLink {
     position: absolute;
     z-index: 2;
+} */
+
+
+.navLinks:hover{
+    text-decoration: underline #45aCA5 3px;
 }
+
 
 /* Flytter dumpling bagved tekst */
 .loginLogo {
@@ -75,14 +82,18 @@ nav a {
 }
 
 /* FY!! */
-#loginTekst {
+#loginTekst { }
  /* PUHA! */
-}
+
 
 /* :grimacing: */
 #udvalgNav {
     margin-right: 10%;
     margin-left: 25%;
+}
+
+#udvalgNav:hover{
+    text-decoration: underline #45aCA5 3px;
 }
 
 .logo{
@@ -92,21 +103,62 @@ nav a {
     margin-top: 1%;
 }
 
+.loginClass:hover{
+    cursor: pointer;
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.4);
+    transition: 2s;
+}
+
 
 /****** FOOTER *****/
 footer{
     display: flex;
     justify-content: space-around;
-    height: 200px;
+    height: 250px;
     background-color: #19376D;
 }
+
+
 footer div {
-    padding-top: 10px;
+    padding-top: 3%;
 }
 footer h5 {
-    color: crimson;
+    color: #45aCA5;
+    font-family: 'Dosis-semibold';
+    font-size: 2vh;
 }
-footer p {
+
+footer h5:hover{
+    cursor: pointer;
+    text-decoration: underline #ff6c5c 2px;
+}
+
+
+footer a {
+    text-decoration: none;
     color: #FAFAFA;
+    font-family: 'titweb-regular';
+    font-size: 1.5vh;
     line-height: 20pt;
+}
+
+footer a:hover{
+    cursor: pointer;
+}
+
+
+
+.række1{
+    margin-left: -10%;
+}
+
+.række2{
+    margin-left: -7%;
+}
+
+
+.række3{
+    margin-left: -7%;
 }

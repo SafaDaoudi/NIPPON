@@ -111,40 +111,50 @@ body {
 .oplevelser h2{
     font-family: 'Dosis-light';
     font-size: 25pt;
+    margin-bottom: 20%;
+
+    margin-left: 7%;
 }
 
 
 .oplevelser{
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
     align-items: center;
+
     width: 80%;
-    margin-top: 90px;
-    padding-bottom: 50px;
+    margin-left: 4%;
+    margin-top: 5%;
+    padding-bottom: 4%;
 }
 
-.karusel {
+
+/* Hvad refereres der til her? */
+/* .karusel {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 80%;
-}
+} */
 
 .imgKarusel{
     display: flex;
     justify-content: center;
-    width: 20%;
     align-items: center;
-    margin-right: auto;
-    margin-left: auto;
+
+    width: 20%;
+    margin-left: 10%;
+    margin-top: 5%;
+
 }
 
 
 
 /****** PILE TIL BILLEDEKARUSELLEN *****/
 #venstrepil{
-    width: 10%;
+    width: 5%;
+    margin-left: -70%;
+    margin-bottom: -15%;
 }
 #venstrepil:hover{
     cursor: pointer;
@@ -162,15 +172,16 @@ body {
     transition: 1s;
 }
 #højrepil{
-    width: 10%;
+    width: 5%;
+    margin-right: -92%;
+    margin-top: -13%;
+    
 }
 
-/****** BILLEDER TIL FOTOKARUSELLEN *****/
+/****** BILLEDER TIL FOTOKARRUSELLEN *****/
 
 #førstefoto{
     margin-top: 10%;
-    margin-right: 10%;
-    opacity: 0.4;
     border-radius: 10%;
     width: 100%;
 }
@@ -184,18 +195,19 @@ body {
 #sidstefoto{
     height: 150%;
     margin-top: 17%;
-    opacity: 0.4;
     border-radius: 10%;
     width: 100%;
 }
 
-/****** PILE TIL BILLEDEKARUSELLEN *****/
+/****** PILE TIL BILLEDEKARRUSELLEN *****/
 .oplevelser p {
-    max-width: 45%;
+    max-width: 60%;
     text-align: justify;
     justify-content: center;
     line-height: 200%;
-
+    
+    padding-top: 4%;
+    padding-left: 10%;
     font-family: 'Dosis-regular';
 }
 
@@ -205,9 +217,12 @@ body {
     color: #ff6c5c;
     background-color: #ff6c5c;
     border:#ff6c5c;
-    height: 1px;
-    margin-bottom: 90px;
+    
     width: 50%;
+    height: 1px;
+    margin-bottom: 5%;
+    margin-left: 23%;
+
 }
 
 /****** Guide + Læs mere *****/
@@ -221,6 +236,7 @@ body {
 .guide h2{
     font-family: 'Dosis-light';
     font-size: 25pt;
+    padding-bottom: 5%;
 }
 
 .læsMerebtn a{
@@ -261,6 +277,7 @@ body {
     position: relative;
     text-align: center;
     margin-top: 5%;
+    z-index: -1;  /* <-- ellers vil den være foran navbaren når man scroller ned */
 }
 .omNippon img {
     width: 100%;
@@ -335,11 +352,12 @@ body {
 
 /***** Retter ****/
 .retterBaggrund {
-    background-color: #DAC0A3;
+    background-color: #f8efe3;
     margin-left: 150px;
     margin-right: 150px;
     padding-bottom: 50px;
-    z-index: 1;
+    padding-top: 7%;
+    z-index: -2;
  }
  
  
@@ -384,21 +402,33 @@ body {
  }
  
  
- .udvalg {
+ h2,h3 {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
-    margin-top: 0;
     text-align: center;
-    line-height: 30pt;
-    padding-top: 50px;
+
+
+    width: 100%;
+    font-family: 'Dosis-regular';
+    font-size: 5vh;
+    color: #45acA5;
+
  }
+
+ .retterBaggrund h3{
+    padding-bottom: 7%;
+    font-size: 3vh;
+
+ }
+
+ 
  
  
  .cards {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
@@ -414,6 +444,30 @@ body {
     width: 200px;
  }
  
+
+ .card p{
+    display: flex;
+    position: absolute;
+    background-color:#45acA5;
+    border-radius: 4px;
+       
+    width: 10.56%;
+    height: 50px;
+    margin-top: -2.5%;
+    padding-left: 1%;
+
+    font-family: 'titweb-semibold';
+    color:#f8efe3;
+
+ }
+
+#infoknap{
+    width: 11%;
+    height: 40%;
+    margin-left: 50%;
+}
+
+
  
  .planlægbtn {
     display: flex;
