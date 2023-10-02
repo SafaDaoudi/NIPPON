@@ -42,7 +42,7 @@ nav a {
 .navTekst {
     display: flex;
     justify-content: space-around;
-    width: 80%;
+    width: 73.5%;
 }
 
 /* Har kommenteret det her ud, fordi der ikke er noget der hedder "navLink" i HTML'en */
@@ -99,8 +99,8 @@ nav a {
 .logo{
     position: absolute;
     z-index: 10;
-    margin-left: 10%;
-    margin-top: 1%;
+    margin-left: 14%;
+    margin-top: 15px;
 }
 
 .loginClass:hover{
