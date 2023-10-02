@@ -16,6 +16,12 @@ body {
 
 /**************** FONTS ****************/
 @font-face {
+    font-family: 'bento';
+    src: url(fonts/Bento\ .ttf);
+}
+
+
+@font-face {
     font-family: 'Dosis-bold';
     src: url(fonts/Dosis-bold.ttf);
 }
@@ -33,6 +39,12 @@ body {
 @font-face {
     font-family: 'Dosis-semibold';
     src: url(fonts/Dosis-SemiBold.ttf);
+}
+
+
+@font-face {
+    font-family: 'Dosis-Extrabold';
+    src: url(fonts/Dosis-ExtraBold.ttf);
 }
 
 @font-face {
@@ -350,9 +362,16 @@ body {
 
 
 
+
+
+
+
+
+
+
 /***** Retter ****/
 .retterBaggrund {
-    background-color: #f8efe3;
+    background-color: #27e20a;
     margin-left: 150px;
     margin-right: 150px;
     padding-bottom: 50px;
@@ -401,8 +420,12 @@ body {
     width: 80%;
  }
  
+
+
+
+ /*** BILLEDE KATALOG ***/
  
- h2,h3 {
+ .retterBaggrund h2,h3 {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -410,76 +433,106 @@ body {
 
     width: 100%;
     font-family: 'Dosis-regular';
-    font-size: 5vh;
+    font-size: 6vh;
     color: #45acA5;
 
  }
-
  .retterBaggrund h3{
     padding-bottom: 7%;
     font-size: 3vh;
 
  }
 
- 
- 
- 
  .cards {
     display: flex;
     justify-content: space-around;
     align-items: center;
     
-    max-width: 90%;
+    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
     flex-wrap: wrap;
     top: 50px;
- 
- 
  }
- .card {
-    background-color: #8EACCD;
-    height: 300px;
-    width: 200px;
- }
- 
 
- .card p{
+ .cards img{
+    border-radius: 10px;
+ }
+
+ .card {
     display: flex;
+    flex-wrap: wrap;
+    background-color: #8EACCD;
+ }
+ 
+ .card p{
+    font-family: 'titweb-semibold';
+    color:#f8efe3;
+ }
+
+.korttekst{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
     position: absolute;
     background-color:#45acA5;
     border-radius: 4px;
-       
+   
     width: 10.56%;
-    height: 50px;
-    margin-top: -2.5%;
-    padding-left: 1%;
-
-    font-family: 'titweb-semibold';
-    color:#f8efe3;
-
- }
-
-#infoknap{
-    width: 11%;
-    height: 40%;
-    margin-left: 50%;
+    height: 45px;
+    margin-top: 13.5%;
+    padding-left: 0.5%;
 }
 
 
- 
+.korttekst button, .korttekst p{
+    display: flex;
+    background-color: transparent;
+    border: none;}
+
+.korttekst button img{
+    width: 8%;
+    margin-top: -11%;
+    margin-left: 90%;
+    position: relative;}
+
+
+
+
+/* RETTER - Styling af "Planlæg din måltidskasse" */
  .planlægbtn {
     display: flex;
     justify-content: center;
-    height: 50px;
-    width: 200px;
-    background-color: #19376D;
-    color: #FEFAEE;
+    height: 55px;
+    width: 300px;
     margin-left: auto;
     margin-right: auto;
+    
+    border: solid 1px #ff6c5c;
+    border-radius: 15px;
+    background-color: #27406b;
+    
  }
  
+ .planlægbtn a{
+    text-decoration: none;
+    padding-top: 4.5%;
+    color: #fef8ea;
+    font-family: 'Dosis-bold';
+    font-size: 2vh;
+
+ }
+
+
+
+
+
+
+
+
+
 
 /***** BETALING ******/
 .bestiling table {
