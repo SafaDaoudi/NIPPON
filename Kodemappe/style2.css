@@ -81,11 +81,6 @@ nav a {
     align-items: center;
 }
 
-/* FY!! */
-#loginTekst { }
- /* PUHA! */
-
-
 /* :grimacing: */
 #udvalgNav {
     margin-right: 10%;
@@ -148,7 +143,16 @@ footer a:hover{
     cursor: pointer;
 }
 
+.some {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
+.footerIkoner {
+    width: 25px;
+    margin: 10px;
+}
 
 .række1{
     margin-left: -10%;
