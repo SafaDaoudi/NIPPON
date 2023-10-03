@@ -245,7 +245,7 @@ body {
 .guide h2{
     font-family: 'Dosis-light';
     font-size: 25pt;
-    padding-bottom: 5%;
+    padding-bottom: 1%;
 }
 
 .læsMerebtn a{
@@ -283,10 +283,14 @@ body {
 
 /******* STEMNINGSBILLEDE + TEKST ********/
 .omNippon {
-    position: relative;
+    position: relative; 
     text-align: center;
     margin-top: 5%;
     z-index: -1;  /* <-- ellers vil den være foran navbaren når man scroller ned */
+    background-image: url(billeder/stemningsbilledeforside.png);
+    height: 300px;
+    padding-top: 3%;
+
 }
 .omNippon img {
     width: 100%;
@@ -296,11 +300,15 @@ body {
     margin-bottom: 20%;
 }
 
+
 .omNippon p { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     max-width: 45%;
     line-height: 40pt;
     text-align: center; 
-    margin-top: -15%;
     margin-left: 27%; 
 
     font-size: 13pt;
@@ -317,8 +325,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: -10%;
     width: 100%;
+    margin-top: 5%;
 }
 
 
@@ -371,7 +379,6 @@ body {
     z-index: -2;
  }
  
- 
  .småbtn {
     position: absolute;
     width: 100%;
@@ -380,7 +387,6 @@ body {
     align-items: flex-end;
     top: 200px;
  }
- 
  
  .allergi {
     display: flex;
@@ -393,13 +399,11 @@ body {
     height: 80px;
  }
  
- 
  .allergi img {
     width: 100%;
     padding-left: 20%;
     margin-top: 7%;
  }
- 
  
  .protein {
     display: flex;
@@ -412,11 +416,13 @@ body {
     height: 80px;
  }
  
- 
  .protein img {
     width: 80%;
  }
  
+<<<<<<< HEAD
+ h2,h3 {
+=======
 
 
 
@@ -455,6 +461,7 @@ body {
  
  
  .retterBaggrund h2,h3 {
+>>>>>>> af5817b61e934a88a82fd9bf3b99817d7c8ea34e
     display: flex;
     justify-content: center;
     text-align: center;
@@ -464,12 +471,10 @@ body {
     font-family: 'Dosis-regular';
     font-size: 6vh;
     color: #45acA5;
-
  }
  .retterBaggrund h3{
     padding-bottom: 7%;
     font-size: 3vh;
-
  }
 
  .cards {
@@ -565,6 +570,10 @@ body {
 
 
 /***** BETALING ******/
+.betalingMain {
+    padding-top: 84px;
+}
+
 .bestiling table {
     display: flex;
     justify-content: space-around;
@@ -575,7 +584,7 @@ body {
 .bestiling th {
     display: flex;
     justify-content: space-around;
-    width: 50%;
+    width: 100%;
 }
 
 .prisbox {
@@ -584,9 +593,7 @@ body {
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
     margin-bottom: 50px;
-    padding-top: 20px;
     padding-bottom: 20px;
     background-color: #8EACCD;
     max-width: 600px;
@@ -597,7 +604,6 @@ body {
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
     margin-bottom: 10px;
     background-color: #ff6c5c;
     height: 50px;
@@ -612,11 +618,15 @@ body {
 .betalingHR {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 70%;
     background-color: #068FFF;
     border: none;
     height: 2px;
-
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
 
 .kortoplysninger {
@@ -649,8 +659,23 @@ body {
     margin-left: auto;
 }
 
-/****** KVITTERING ******/
+/***** PRISOVERSIGT *****/
 
+.oversigtMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 84px;
+}
+
+.oversigtbox {
+    height: 1000px;
+    width: 50%;
+    background-color: #8EACCD;
+}
+
+
+/****** KVITTERING ******/
 
 .kvitteringMain {
     display: flex;
@@ -661,12 +686,7 @@ body {
     max-width: 600px;
     align-items: center;
     border: solid black 3px;
-    margin-top: 30px;
     margin-bottom: 30px;
- 
- 
- 
- 
     background-color: #7895CB;
  }
  
@@ -705,6 +725,26 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+<<<<<<< HEAD
+    color: #45acA5;
+    font-family: 'Dosis-light';
+
+}
+
+.fejlSide img {
+    height: 50%;
+    margin: 2%;
+}
+
+.fejlSide h1 {
+    font-size: 40pt;
+    margin-top: 3%;
+}
+
+.fejlSide h4 {
+    font-size: 15pt;
+}
+=======
 
     padding: 100px;
 }
@@ -749,3 +789,4 @@ body {
 
     margin-top: 50px;
   }
+>>>>>>> af5817b61e934a88a82fd9bf3b99817d7c8ea34e

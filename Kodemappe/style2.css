@@ -79,11 +79,14 @@ nav a {
   align-items: center;
 }
 
+<<<<<<< HEAD
+=======
 /* FY!! */
 #loginTekst {
 }
 /* PUHA! */
 
+>>>>>>> af5817b61e934a88a82fd9bf3b99817d7c8ea34e
 /* :grimacing: */
 #udvalgNav {
   margin-right: 10%;
@@ -143,8 +146,24 @@ footer a:hover {
   cursor: pointer;
 }
 
+<<<<<<< HEAD
+.some {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footerIkoner {
+    width: 25px;
+    margin: 10px;
+}
+
+.række1{
+    margin-left: -10%;
+=======
 .række1 {
   margin-left: -10%;
+>>>>>>> af5817b61e934a88a82fd9bf3b99817d7c8ea34e
 }
 
 .række2 {
