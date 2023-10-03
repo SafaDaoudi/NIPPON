@@ -8,13 +8,16 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
     background-color: #FAFAFA;
-    box-sizing: border-box; 
 }
 
 /**************** FONTS ****************/
+@font-face {
+    font-family: 'bento';
+    src: url(fonts/Bento\ .ttf);
+}
+
+
 @font-face {
     font-family: 'Dosis-bold';
     src: url(fonts/Dosis-bold.ttf);
@@ -33,6 +36,12 @@ body {
 @font-face {
     font-family: 'Dosis-semibold';
     src: url(fonts/Dosis-SemiBold.ttf);
+}
+
+
+@font-face {
+    font-family: 'Dosis-Extrabold';
+    src: url(fonts/Dosis-ExtraBold.ttf);
 }
 
 @font-face {
@@ -358,9 +367,16 @@ body {
 
 
 
+
+
+
+
+
+
+
 /***** Retter ****/
 .retterBaggrund {
-    background-color: #f8efe3;
+    background-color: #27e20a;
     margin-left: 150px;
     margin-right: 150px;
     padding-bottom: 50px;
@@ -404,7 +420,16 @@ body {
     width: 80%;
  }
  
+<<<<<<< HEAD
  h2,h3 {
+=======
+
+
+
+ /*** BILLEDE KATALOG ***/
+ 
+ .retterBaggrund h2,h3 {
+>>>>>>> af5817b61e934a88a82fd9bf3b99817d7c8ea34e
     display: flex;
     justify-content: center;
     text-align: center;
@@ -412,10 +437,9 @@ body {
 
     width: 100%;
     font-family: 'Dosis-regular';
-    font-size: 5vh;
+    font-size: 6vh;
     color: #45acA5;
  }
-
  .retterBaggrund h3{
     padding-bottom: 7%;
     font-size: 3vh;
@@ -426,57 +450,91 @@ body {
     justify-content: space-around;
     align-items: center;
     
-    max-width: 90%;
+    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
     flex-wrap: wrap;
     top: 50px;
- 
- 
  }
- .card {
-    background-color: #8EACCD;
-    height: 300px;
-    width: 200px;
- }
- 
 
- .card p{
+ .cards img{
+    border-radius: 10px;
+ }
+
+ .card {
     display: flex;
+    flex-wrap: wrap;
+    background-color: #8EACCD;
+ }
+ 
+ .card p{
+    font-family: 'titweb-semibold';
+    color:#f8efe3;
+ }
+
+.korttekst{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    
     position: absolute;
     background-color:#45acA5;
     border-radius: 4px;
-       
+   
     width: 10.56%;
-    height: 50px;
-    margin-top: -2.5%;
-    padding-left: 1%;
-
-    font-family: 'titweb-semibold';
-    color:#f8efe3;
-
- }
-
-#infoknap{
-    width: 11%;
-    height: 40%;
-    margin-left: 50%;
+    height: 45px;
+    margin-top: 13.5%;
+    padding-left: 0.5%;
 }
 
 
- 
+.korttekst button, .korttekst p{
+    display: flex;
+    background-color: transparent;
+    border: none;}
+
+.korttekst button img{
+    width: 8%;
+    margin-top: -11%;
+    margin-left: 90%;
+    position: relative;}
+
+
+
+
+/* RETTER - Styling af "Planlæg din måltidskasse" */
  .planlægbtn {
     display: flex;
     justify-content: center;
-    height: 50px;
-    width: 200px;
-    background-color: #19376D;
-    color: #FEFAEE;
+    height: 55px;
+    width: 300px;
     margin-left: auto;
     margin-right: auto;
+    
+    border: solid 1px #ff6c5c;
+    border-radius: 15px;
+    background-color: #27406b;
+    
  }
  
+ .planlægbtn a{
+    text-decoration: none;
+    padding-top: 4.5%;
+    color: #fef8ea;
+    font-family: 'Dosis-bold';
+    font-size: 2vh;
+
+ }
+
+
+
+
+
+
+
+
+
 
 /***** BETALING ******/
 .betalingMain {
@@ -629,12 +687,12 @@ body {
 
 /***** 404 ****/
 .fejlSide {
-    height: 700px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     text-align: center;
+<<<<<<< HEAD
     color: #45acA5;
     font-family: 'Dosis-light';
 
@@ -653,3 +711,49 @@ body {
 .fejlSide h4 {
     font-size: 15pt;
 }
+=======
+
+    padding: 100px;
+}
+  
+  .fejlSide h1 {
+    font-family:'bento';
+    font-weight: 100;
+    font-size: 96px;
+  }
+  
+  .fejlSide img {
+    width: 350px;
+    margin-top: 50px;
+  }
+  
+  .fejlSide h4 {
+    font-family: 'titweb-regular';
+    font-size: 24px;
+    margin-top: 50px;
+  }
+  
+  .fejlSide  a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Dosis-semibold';
+
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  
+    width: 260px;
+    height: 46px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    color: var(--Lys-beige, #FEFAEE);
+    border: 2px solid var(--rd-orange, #ff6c5c);
+    background: var(--mrkebl-dyb-kongebl, #27406b);
+    text-decoration: none;
+
+    margin-top: 50px;
+  }
+>>>>>>> af5817b61e934a88a82fd9bf3b99817d7c8ea34e

@@ -1,48 +1,48 @@
 /***** FONTS ******/
 
 @font-face {
-    font-family: 'Dosis-bold';
-    src: url(fonts/Dosis-Bold.ttf);
+  font-family: "Dosis-bold";
+  src: url(fonts/Dosis-Bold.ttf);
 }
 
 @font-face {
-    font-family: 'Dosis-regular';
-    src: url(fonts/Dosis-Regular.ttf);
+  font-family: "Dosis-regular";
+  src: url(fonts/Dosis-Regular.ttf);
 }
 
 @font-face {
-    font-family: 'Dosis-light';
-    src: url(fonts/Dosis-Light.ttf);
+  font-family: "Dosis-light";
+  src: url(fonts/Dosis-Light.ttf);
 }
 
 /****** NAV *******/
 header {
-    position: fixed;
-    z-index: 0;
-    width: 100%;
+  position: fixed;
+  z-index: 0;
+  width: 100%;
 }
 
 nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /*Fra Hex til RGBA - Hilsen Jesper. :)*/
-    background-color: rgba(39,64,107, 0.75);
-    /* Padding/Margin og lign. laves som px, for at bibeholde element-størrelser */
-    padding: 32px;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*Fra Hex til RGBA - Hilsen Jesper. :)*/
+  background-color: rgba(39, 64, 107, 0.75);
+  /* Padding/Margin og lign. laves som px, for at bibeholde element-størrelser */
+  padding: 32px;
+  width: 100%;
 }
 nav a {
-    text-decoration: none;
-    color: #FEFAEE;
-    font-family: 'Dosis-bold';
-    font-size: 12pt;
+  text-decoration: none;
+  color: #fefaee;
+  font-family: "Dosis-bold";
+  font-size: 12pt;
 }
 
 .navTekst {
-    display: flex;
-    justify-content: space-around;
-    width: 80%;
+  display: flex;
+  justify-content: space-around;
+  width: 73.5%;
 }
 
 /* Har kommenteret det her ud, fordi der ikke er noget der hedder "navLink" i HTML'en */
@@ -51,98 +51,102 @@ nav a {
     z-index: 2;
 } */
 
-
-.navLinks:hover{
-    text-decoration: underline #45aCA5 3px;
+.navLinks:hover {
+  text-decoration: underline #45aca5 3px;
 }
-
 
 /* Flytter dumpling bagved tekst */
 .loginLogo {
-    position: absolute;
+  position: absolute;
 }
 
 .loginLogo img {
-    width: 100%;
+  width: 100%;
 }
 
 .loginText {
-    position:absolute;
-    z-index: 2;
-    color: black;
+  position: absolute;
+  z-index: 2;
+  color: black;
 }
 
 .loginClass {
-    width: 50px;
-    margin-left: 10%;
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
+  width: 50px;
+  margin-left: 10%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
+<<<<<<< HEAD
+=======
+/* FY!! */
+#loginTekst {
+}
+/* PUHA! */
+
+>>>>>>> af5817b61e934a88a82fd9bf3b99817d7c8ea34e
 /* :grimacing: */
 #udvalgNav {
-    margin-right: 10%;
-    margin-left: 25%;
+  margin-right: 10%;
+  margin-left: 25%;
 }
 
-#udvalgNav:hover{
-    text-decoration: underline #45aCA5 3px;
+#udvalgNav:hover {
+  text-decoration: underline #45aca5 3px;
 }
 
-.logo{
-    position: absolute;
-    z-index: 10;
-    margin-left: 10%;
-    margin-top: 1%;
+.logo {
+  position: absolute;
+  z-index: 10;
+  margin-left: 14%;
+  margin-top: 15px;
 }
 
-.loginClass:hover{
-    cursor: pointer;
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.4);
-    transition: 2s;
+.loginClass:hover {
+  cursor: pointer;
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.4);
+  transition: 2s;
 }
-
 
 /****** FOOTER *****/
-footer{
-    display: flex;
-    justify-content: space-around;
-    height: 250px;
-    background-color: #19376D;
+footer {
+  display: flex;
+  justify-content: space-around;
+  height: 250px;
+  background-color: #19376d;
 }
-
 
 footer div {
-    padding-top: 3%;
+  padding-top: 3%;
 }
 footer h5 {
-    color: #45aCA5;
-    font-family: 'Dosis-semibold';
-    font-size: 2vh;
+  color: #45aca5;
+  font-family: "Dosis-semibold";
+  font-size: 2vh;
 }
 
-footer h5:hover{
-    cursor: pointer;
-    text-decoration: underline #ff6c5c 2px;
+footer h5:hover {
+  cursor: pointer;
+  text-decoration: underline #ff6c5c 2px;
 }
-
 
 footer a {
-    text-decoration: none;
-    color: #FAFAFA;
-    font-family: 'titweb-regular';
-    font-size: 1.5vh;
-    line-height: 20pt;
+  text-decoration: none;
+  color: #fafafa;
+  font-family: "titweb-regular";
+  font-size: 1.5vh;
+  line-height: 20pt;
 }
 
-footer a:hover{
-    cursor: pointer;
+footer a:hover {
+  cursor: pointer;
 }
 
+<<<<<<< HEAD
 .some {
     display: flex;
     justify-content: space-around;
@@ -156,13 +160,16 @@ footer a:hover{
 
 .række1{
     margin-left: -10%;
+=======
+.række1 {
+  margin-left: -10%;
+>>>>>>> af5817b61e934a88a82fd9bf3b99817d7c8ea34e
 }
 
-.række2{
-    margin-left: -7%;
+.række2 {
+  margin-left: -7%;
 }
 
-
-.række3{
-    margin-left: -7%;
+.række3 {
+  margin-left: -7%;
 }
