@@ -398,20 +398,26 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #068FFF;
+    background-color: #45acA5;
+    
+    border-radius: 2%;
     width: 80px;
     height: 80px;
  }
  
  .allergi img {
-    width: 80%;
+    width: 120%;
+    margin-left: 70%;
+    margin-top: -25%;
  }
  
  .protein {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #068FFF;
+    background-color: #45acA5;
+    
+    border-radius: 2%;
     width: 80px;
     height: 80px;
  }
@@ -427,7 +433,6 @@ body {
 
 
  /*** BILLEDE KATALOG ***/
- 
  .retterBaggrund h2,h3 {
 >>>>>>> af5817b61e934a88a82fd9bf3b99817d7c8ea34e
     display: flex;
