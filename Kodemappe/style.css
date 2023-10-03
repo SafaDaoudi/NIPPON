@@ -361,11 +361,6 @@ body {
 
 
 
-
-
-
-
-
 /***** Retter ****/
 .retterBaggrund {
     background-color: #27e20a;
@@ -384,7 +379,6 @@ body {
     flex-direction: column;
     align-items: flex-end;
     top: 200px;
-    z-index: 2;
  }
  
  
@@ -401,9 +395,9 @@ body {
  
  
  .allergi img {
-    width: 120%;
-    margin-left: 70%;
-    margin-top: -25%;
+    width: 100%;
+    padding-left: 20%;
+    margin-top: 7%;
  }
  
  
@@ -427,6 +421,39 @@ body {
 
 
  /*** BILLEDE KATALOG ***/
+ 
+ /* Placering og styling af tilbage-knappen */
+
+
+ .tilbageKnap{
+   display: flex;
+   
+   width: 10%;
+   margin-left: 13.8%;
+   
+   font-family: 'titweb-regular';
+   font-size: 1.5vh;
+   color: #27406b;
+ }
+
+ .tilbageKnap img{
+    width: 14%;
+    margin-top: 1%;
+    padding-right: 3%;
+ } 
+
+
+
+
+ 
+ #tidslinje2{
+    width:15%;
+    margin-left: 42.5%;
+    padding-bottom: 5%;
+
+ }
+ 
+ 
  .retterBaggrund h2,h3 {
     display: flex;
     justify-content: center;
@@ -519,8 +546,9 @@ body {
  }
  
  .planlægbtn a{
+    padding-top: 4%;
+    
     text-decoration: none;
-    padding-top: 4.5%;
     color: #fef8ea;
     font-family: 'Dosis-bold';
     font-size: 2vh;
