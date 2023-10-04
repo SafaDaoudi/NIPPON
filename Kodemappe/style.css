@@ -386,11 +386,9 @@ body {
 
     background-color: #fcf3e3;
     width: 72%;
-    /* margin-left: 150px;
-    margin-right: 150px; */
+ 
     padding-bottom: 50px;
     padding-top: 7%;
-    /* z-index: -2; */
  }
  
  .småbtn {
@@ -441,6 +439,24 @@ body {
  .protein img {
     width: 80%;
  }
+
+ #indholdpopup{
+    display: none;
+    width: 200px;
+    height: 200px;
+    top: 15%;
+    left: 20%;
+
+    background-color: red;
+
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+ }
+
+ @keyframes openup{
+    from{width: 20%; top: 1%; left: 5%; }
+    to{width: 50%; top: 15%; left: 25%; }
+    }
  
 
  /*** BILLEDE KATALOG ***/

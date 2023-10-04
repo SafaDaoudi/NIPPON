@@ -1,3 +1,4 @@
+// FORSIDE
 /******* Billedkarrusel *******/
 // // Variable:
 // const førstefoto = document.getElementById("førstefoto");
