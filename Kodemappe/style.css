@@ -91,9 +91,14 @@ body {
     display: flex;
     justify-content: center;
     
-    background-image: url(billeder/dumplingskålen-Redigeret-1919x503.jpg);
+    /* background-image: url(billeder/dumplingskålen-Redigeret-1919x503.jpg); */
+    /* background-image: url(billeder/bentobox.jpg); */
+    background-image: url(billeder/forside-store-billede.png);
+
+ 
     height: 500px;
     width: 100%;
+    background-repeat: no-repeat;
 }
 
 .bestilbtn {
@@ -280,15 +285,28 @@ body {
     transition: 1s;
 }
 
+.guideCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.guideCard img{
+    width: 75%;
+}
+
+
 /******* STEMNINGSBILLEDE + TEKST ********/
 .omNippon {
-    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin-top: 5%;
-    z-index: -1;  /* <-- ellers vil den være foran navbaren når man scroller ned */
+
+    margin-top: 4%;
     background-image: url(billeder/stemningsbilledeforside.png);
-    height: 300px;
-    padding-top: 3%;
+    height: 250px;
 
 }
 .omNippon img {
@@ -296,7 +314,9 @@ body {
 }
 
 .centeredFORSIDE{
-    margin-bottom: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -305,10 +325,10 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+
     max-width: 45%;
     line-height: 40pt;
     text-align: center; 
-    margin-left: 27%; 
 
     font-size: 13pt;
     font-family: 'titweb-bolditalic';
@@ -325,7 +345,7 @@ body {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    margin-top: 5%;
+    margin-top: 4%;
 }
 
 
@@ -363,12 +383,6 @@ body {
     font-size: 2.5vh;
     color: #45acA5;
 }
-
-
-
-
-
-
 
 
 /***** Retter ****/

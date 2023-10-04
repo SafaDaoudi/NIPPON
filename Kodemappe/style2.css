@@ -79,19 +79,36 @@ nav a {
 
 
 #udvalgNav {
-  margin-right: 10%;
+  margin-right: 35%;
 }
 
 #udvalgNav:hover {
   text-decoration: underline #45aca5 3px;
 }
 
-.logo {
+
+/* hover ekkeft over logoet */
+.logo, .logo-hover {
   position: absolute;
   z-index: 10;
   margin-left: 14%;
   margin-top: 15px;
 }
+
+.logo-hover {
+  opacity: 0;
+  pointer-events: none; 
+}
+
+.logo-container:hover .logo-hover {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.logo-container:hover .logo {
+  opacity: 0;
+}
+
 
 .loginClass:hover {
   cursor: pointer;
