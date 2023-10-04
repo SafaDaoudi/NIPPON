@@ -143,9 +143,8 @@ body {
     padding-bottom: 4%;
 }
 
-
 /****** PILE TIL BILLEDEKARUSELLEN *****/
-.kundeKarrusel{
+ .kundeKarrusel{
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -159,18 +158,19 @@ body {
     width: 100px;
     height: 100px;
 }
+
 #venstrepil:hover{
     cursor: pointer;
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
     transform: scale(1.1);
     transition: 1s;
 }
 
 #højrepil:hover{
     cursor: pointer;
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    -ms-transform: scale(1.5); 
+    -webkit-transform: scale(1.5); 
     transform: scale(1.1);
     transition: 1s;
 }
@@ -180,13 +180,15 @@ body {
     justify-content: center;
     width: 100px;
     height: 100px;
-}
+}  
 
 /****** BILLEDER TIL FOTOKARRUSELLEN *****/
 .imgKarusel{
     display: flex;
     justify-content: center;
     align-items: center;
+
+    gap: 50px;
 
     height: 425px;
     width: 20%;
@@ -201,6 +203,9 @@ body {
 #midterfoto{
     border-radius: 10%;
     width: 100%;
+}
+#midterfoto:focus {
+    transform: scale(1.2); /* Juster værdien efter behov for at ændre størrelsen */
 }
 
 
