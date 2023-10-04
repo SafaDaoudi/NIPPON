@@ -78,6 +78,15 @@ body {
 
 
 /****** FORSIDE *****/
+.forsideMain{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
 .velkomstimg{
     display: flex;
     justify-content: center;
@@ -120,9 +129,7 @@ body {
 .oplevelser h2{
     font-family: 'Dosis-light';
     font-size: 25pt;
-    margin-bottom: 20%;
-
-    margin-left: 7%;
+    margin-bottom: 5%;
 }
 
 
@@ -132,38 +139,25 @@ body {
     align-items: center;
 
     width: 80%;
-    margin-left: 4%;
-    margin-top: 5%;
+    margin-top: 4%;
     padding-bottom: 4%;
 }
 
 
-/* Hvad refereres der til her? */
-/* .karusel {
+/****** PILE TIL BILLEDEKARUSELLEN *****/
+.kundeKarrusel{
     display: flex;
-    justify-content: center;
+    justify-content:space-between;
     align-items: center;
-    width: 80%;
-} */
-
-.imgKarusel{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 20%;
-    margin-left: 10%;
-    margin-top: 5%;
-
+    width: 90%;
 }
 
-
-
-/****** PILE TIL BILLEDEKARUSELLEN *****/
 #venstrepil{
-    width: 5%;
-    margin-left: -70%;
-    margin-bottom: -15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
 }
 #venstrepil:hover{
     cursor: pointer;
@@ -181,29 +175,36 @@ body {
     transition: 1s;
 }
 #højrepil{
-    width: 5%;
-    margin-right: -92%;
-    margin-top: -13%;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
 }
 
 /****** BILLEDER TIL FOTOKARRUSELLEN *****/
+.imgKarusel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 425px;
+    width: 20%;
+    padding: 20px;
+}
 
 #førstefoto{
-    margin-top: 10%;
     border-radius: 10%;
     width: 100%;
 }
 
 #midterfoto{
-    padding-right: 10%;
+    border-radius: 10%;
     width: 100%;
 }
 
 
 #sidstefoto{
-    height: 150%;
-    margin-top: 17%;
     border-radius: 10%;
     width: 100%;
 }
@@ -211,12 +212,7 @@ body {
 /****** PILE TIL BILLEDEKARRUSELLEN *****/
 .oplevelser p {
     max-width: 60%;
-    text-align: justify;
-    justify-content: center;
     line-height: 200%;
-    
-    padding-top: 4%;
-    padding-left: 10%;
     font-family: 'Dosis-regular';
 }
 
@@ -230,8 +226,6 @@ body {
     width: 50%;
     height: 1px;
     margin-bottom: 5%;
-    margin-left: 23%;
-
 }
 
 /****** Guide + Læs mere *****/
