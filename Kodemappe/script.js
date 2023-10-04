@@ -1,3 +1,4 @@
+// FORSIDE
 /******* Billedkarrusel *******/
 // Variable:
 const førstefoto = document.getElementById("førstefoto");
@@ -33,3 +34,32 @@ function forrigeBillede(){
     carousel.pop();
     carousel[0].style.display = "block";
 }
+
+
+
+
+// SE UDVALG
+// var infoknap = document.getElementById('infoknap');
+// var indhold = document.getElementById('indholdpopup');
+
+
+// infoknap.addEventListener('click', function() {
+//     indhold.style.display = "block";
+// });
+
+
+
+
+function showPic(){
+    document.getElementById("indhold").style.display = "block";
+    document.getElementById("indhold").style.animationName ="openup";
+}
+
+document.getElementById("infoknap").addEventListener("click", showPic);
+
+
+function hidePic(){
+    document.getElementById("indhold").style.display = "none";
+
+}
+document.getElementById("indhold").addEventListener("click", hidePic);
