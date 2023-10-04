@@ -504,12 +504,12 @@ body {
 
  .cards img{
     border-radius: 10px;
+
  }
 
  .card {
     display: flex;
     flex-wrap: wrap;
-    background-color: #8EACCD;
  }
  
  .card p{
@@ -521,15 +521,16 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    
     position: absolute;
-    background-color:#45acA5;
-    border-radius: 4px;
-   
-    width: 10.56%;
-    height: 45px;
-    margin-top: 13.5%;
+    background-color: #45acA5;
+    
+    border-radius: 0px 0px 10px 10px;
+    
+    width: 200px;
+    height: 50px;
     padding-left: 0.5%;
+    margin-top: 250px;
+    justify-content: center;
 }
 
 
