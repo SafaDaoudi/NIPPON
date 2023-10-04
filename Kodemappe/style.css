@@ -403,7 +403,7 @@ body {
  }
  
  .småbtn {
-    position: absolute;
+    position: fixed;
     width: 15%;
     display: flex;
     flex-direction: column;
@@ -442,7 +442,6 @@ body {
     
     border-radius: 10px 0 0 10px;
 
-
     width: 80px;
     height: 80px;
  }
@@ -450,6 +449,60 @@ body {
  .protein img {
     width: 80%;
  }
+
+ #proteinKatalog{
+    display: none;
+    position: fixed;
+    width: 267px;
+    height: 300px;
+    margin-top: -80px;
+    background-color: #ffffff;
+    border: 1px solid #45acA5;
+    border-radius: 6px;
+ }
+ #proteinKatalog h2{
+    padding: 30px 0px 20px 10px;
+    color: #45acA5;
+    font-family: 'Dosis-bold';
+    font-size: 14pt;
+   }
+
+#lukProtein{
+    display: block;
+    background-color: #45acA5;
+    width: 70px;
+    border-radius: 8px 8px 8px 8px;
+    border: transparent;
+    color: #FEFAEE;
+    margin-left: -1px;
+    margin-top: -1px;
+    padding: 2px 0px 2px 0px;
+    font-family: 'Dosis-Extrabold';
+    font-size: 10pt;
+    cursor: pointer;
+}
+
+
+ #de2rækker{
+    display: flex;
+    justify-content: space-around;
+ }
+#række1{
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+}
+
+#række2{
+    display:flex;
+    flex-direction: column;
+    width: 50px;
+}
+
+
+
+
+
 
  #indholdpopup{
     display:none;

@@ -15,10 +15,7 @@ let indhold = document.getElementById("indholdpopup");
 // let helesiden = document.getElementById("retterBaggrund");
 
 
-
-
 // Boxen åbner:
-
 infoknapper.forEach(function(åbenBox) {
 åbenBox.addEventListener("click",visBox);
 });
@@ -34,7 +31,6 @@ function visBox(){
 
 
 //Boxen lukker :
-
 lukknap.forEach(function(luk) {
  luk.addEventListener("click",lukBox);
  });
@@ -47,17 +43,34 @@ lukknap.forEach(function(luk) {
 
 
 
-//  //Variable:
-// let næringsLink = document.getElementById("næring");
-// let energi = document.getElementById("energi");
+//  protein.addEventListener("click",visProteinBox);
 
-// //Når der klikkes på "Se næringsindhold" skal funktionen visEnergi ske:
-// næringsLink.addEventListener("click",visEnergi);
+//  function visProteinBox(){
+//    proteinBox.style.display = "block";
+//  }
 
-// //Div'en "energi" vises
-// function visEnergi(){
-//    energi.style.display = "block";
-// }
+
+
+// Se udvalg - Ikon siden åbner og lukker
+let protein = document.getElementById("protein");
+let proteinBox = document.getElementById("proteinKatalog");
+let lukProteinKnap = document.getElementById("lukProtein")
+let åbenIkon = document.getElementById("ikonFoto");
+
+
+åbenIkon.addEventListener("click", visKatalog);
+
+function visKatalog(){
+proteinBox.style.display = "block";
+protein.style.display = "none";
+}
+
+lukProteinKnap.addEventListener("click", lukKatalog);
+
+function lukKatalog(){
+proteinBox.style.display = "none";
+protein.style.display = "flex";
+}
 
 
 
