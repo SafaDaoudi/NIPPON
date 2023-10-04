@@ -201,11 +201,13 @@ body {
 }
 
 #førstefoto{
+    display: block;
     border-radius: 10%;
     width: 100%;
 }
 
 #midterfoto{
+    display: none;
     border-radius: 10%;
     width: 100%;
 }
@@ -215,6 +217,7 @@ body {
 
 
 #sidstefoto{
+    display: none;  
     border-radius: 10%;
     width: 100%;
 }
@@ -455,22 +458,58 @@ body {
  }
 
  #indholdpopup{
-    display: none;
-    width: 200px;
-    height: 200px;
-    top: 15%;
-    left: 20%;
+    display:none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
 
-    background-color: red;
+    width: 450px;
+    height: 600px;
+    
+    /* for placeringen af div'en */
+    left: 150px;
+    top: -100px;
+
+    border-radius: 15px 15px 0px 0px;
 
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
+    z-index: 20;
  }
 
- @keyframes openup{
+#indholdpopup h1{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    padding:2% 0% 0% 7%;
+
+    color: #27406B;
+    font-size: 2.5vh;
+    font-family: 'titweb-light';
+
+}
+
+#indholdpopup p{
+    text-align: justify;
+    padding:1% 7% 0% 9%;
+    line-height: 15px;
+    
+    color: #27406B;
+    font-family: 'Dosis-regular';
+    font-size: 10pt;
+}
+
+
+#indholdpopup h4{
+    padding:0% 0% 0% 7%;
+    margin-top: 80px;
+
+}
+
+ /* @keyframes openup{
     from{width: 20%; top: 1%; left: 5%; }
     to{width: 50%; top: 15%; left: 25%; }
-    }
+    } */
  
 
  /*** BILLEDE KATALOG ***/
@@ -570,12 +609,12 @@ body {
 }
 
 
-.korttekst button, .korttekst p{
+.korttekst img .korttekst p{
     display: flex;
     background-color: transparent;
     border: none;}
 
-.korttekst button img{
+#infoknap{
     width: 8%;
     margin-top: -11%;
     margin-left: 90%;
