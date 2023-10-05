@@ -7,12 +7,11 @@
     <title>NIPPON Prisoversigt</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style2.css">
-    <script src="script.js" defer></script>
+    <script src="script3.js" defer></script>
 </head>
 <body>
     <header>
-    
-        <a class="logo" href="index.html"><img src="billeder/nipponNav.png" alt=""></a>
+        <a class="logo" href="index.html"><img src="billeder/logo/dombling_logo.png" alt=""></a>
     <nav>
         <div class="navTekst">
             <a id="udvalgNav" href="udvalg.html">Se udvalg</a>
@@ -49,35 +48,79 @@
 
             <div class="antal">
                 <h4>Vælg antal personer og opskrifter</h4>
-                <table>
-                    <tr>
-                        <td>Personer</td>
-                        <td><img src="billeder/ikoner/1-7/1.png" alt=""></td>
-                        <td><img src="billeder/ikoner/1-7/2.png" alt=""></td>
-                        <td><img src="billeder/ikoner/1-7/3.png" alt=""></td>
-                        <td><img src="billeder/ikoner/1-7/4.png" alt=""></td>
-                        <td><img src="billeder/ikoner/1-7/5.png" alt=""></td>
-                    </tr>
-                    <tr>
-                        <td>Heraf børn</td>
-                        <td><img src="billeder/ikoner/1-7/1.png" alt=""></td>
-                        <td><img src="billeder/ikoner/1-7/2.png" alt=""></td>
-                        <td><img src="billeder/ikoner/1-7/3.png" alt=""></td>
-                        <td><img src="billeder/ikoner/1-7/4.png" alt=""></td>
-                        <td><img src="billeder/ikoner/1-7/5.png" alt=""></td>
-                    </tr>
-                    <tr>
-                        <td>Måltider</td>
-                        <td><img src="billeder/ikoner/1-7/1.png" alt=""></td>
-                        <td><img src="billeder/ikoner/1-7/2.png" alt=""></td>
-                        <td><img src="billeder/ikoner/1-7/3.png" alt=""></td>
-                        <td><img src="billeder/ikoner/1-7/4.png" alt=""></td>
-                        <td><img src="billeder/ikoner/1-7/5.png" alt=""></td>
-                    </tr>
-                </table>
-            </div>
+                <div class="antalInfo">
+                    <div>
+                        <p>Personer</p>
+                        <p>Heraf børn</p>
+                        <p>Måltider</p>
+                    </div>
+                    <div>
+                        <div class="dumplingTal">
+                            <img src="billeder/ikoner/1-7/1.png" alt="#">
+                            <img src="billeder/ikoner/1-7/2.png" alt="#">
+                            <img src="billeder/ikoner/1-7/3.png" alt="#">
+                            <img src="billeder/ikoner/1-7/4.png" alt="#">
+                            <img src="billeder/ikoner/1-7/5.png" alt="#">
+                        </div>
+
+                        <div class="dumplingTal">
+                            <img src="billeder/ikoner/1-7/1.png" alt="#">
+                            <img src="billeder/ikoner/1-7/2.png" alt="#">
+                            <img src="billeder/ikoner/1-7/3.png" alt="#">
+                            <img src="billeder/ikoner/1-7/4.png" alt="#">
+                            <img src="billeder/ikoner/1-7/5.png" alt="#">
+                        </div>
+
+                        <div class="dumplingTal">
+                            <img src="billeder/ikoner/1-7/1.png" alt="#">
+                            <img src="billeder/ikoner/1-7/2.png" alt="#">
+                            <img src="billeder/ikoner/1-7/3.png" alt="#">
+                            <img src="billeder/ikoner/1-7/4.png" alt="#">
+                            <img src="billeder/ikoner/1-7/5.png" alt="#">
+                        </div>
+                    </div>
+
+                </div>
+
+
+
 
             <div class="madpakker">
+                <h4>Madpakker</h4>
+                <div class="voksenMadpakker">
+                    <p>Voksne</p>
+                
+                <div>
+                    <p>
+                        <button onclick="totalClick(1)">+</button>
+                        <span id="totalClick">0</span>
+                        <button onclick="totalClick(-1)">-</button>
+                    </p>
+                </div>
+
+                <div class="børnMadpakker">
+                    <p>børn</p>
+                
+                <div>
+                    <p>
+                        <button onclick="totalClick(1)">+</button>
+                        <span id="totalClick">0</span>
+                        <button onclick="totalClick(-1)">-</button>
+                    </p>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <!--- <div class="madpakker">
                 <h4>Madpakker</h4>
                 <table>
                     <tr>
@@ -97,7 +140,7 @@
                         </td>
                     </tr>
                 </table>
-            </div>
+            </div> -->
 
             <hr>
 
