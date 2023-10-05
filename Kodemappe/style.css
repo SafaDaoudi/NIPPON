@@ -106,6 +106,8 @@ body {
     display: flex;
     justify-content: center;
     
+    background-image: url(billeder/forside-store-billede.png);
+
     height: 500px;
     width: 100%;
 }
@@ -143,7 +145,7 @@ body {
 .oplevelser h2{
     font-family: 'Dosis-light';
     font-size: 25pt;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
 }
 
 
@@ -197,32 +199,36 @@ body {
 }
 
 /****** BILLEDER TIL FOTOKARRUSELLEN *****/
+.kundeKarrusel{
+    margin-bottom: 2%;
+}
+
 .imgKarusel{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 425px;
-    width: 20%;
+    width: 50%;
     padding: 20px;
 }
 
 #førstefoto{
     display: block;
     border-radius: 10%;
-    width: 100%;
+    width: 60%;
 }
 
 #midterfoto{
     display: none;
     border-radius: 10%;
-    width: 100%;
+    width: 40%;
 }
 
 
 #sidstefoto{
     display: none;  
     border-radius: 10%;
-    width: 100%;
+    width: 80%;
 }
 
 /****** PILE TIL BILLEDEKARRUSELLEN *****/
