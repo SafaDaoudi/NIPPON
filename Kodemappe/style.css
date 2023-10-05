@@ -1027,7 +1027,9 @@ body {
     margin-bottom: 50px;
     padding-bottom: 20px;
     padding-top: 1%;
-    background-color: #8EACCD;
+    margin-top: 2%;
+    border: #45acA5 solid 3px;
+    border-radius: 6px;
     max-width: 600px;
 }
 
@@ -1100,7 +1102,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 70%;
-    background-color: #068FFF;
+    background-color: #45acA5;
     border: none;
     height: 2px;
     margin-left: auto;
@@ -1161,7 +1163,7 @@ body {
     margin-right: auto;
     margin-left: auto;
 
-    border: solid 1px #ff6c5c;
+    border: #45acA5 solid 2px;
     border-radius: 15px;
     background-color: #27406b;
     padding: 2%;
