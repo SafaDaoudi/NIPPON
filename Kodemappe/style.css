@@ -584,7 +584,7 @@ body {
     display: block;
     margin-left: 40px;
     padding-top:50px;
-    padding-bottom: 30px;
+    /* padding-bottom: 30px; */
 
     background-color: transparent;
     border: transparent;
@@ -592,6 +592,18 @@ body {
     font-family: 'titweb-light';
     font-size: 10pt;
 }
+
+#collapsible-content {
+    display: none;
+    height: 250px;
+    background-color: white;
+  }
+  
+  #collapsible-content img{
+    padding-top: 10px;
+  }
+
+
 #næringsindholdknap:hover{
     cursor: pointer;
     text-decoration: underline 1px #45acA5;

@@ -14,6 +14,10 @@ let lukknap = document.querySelectorAll("#lukKnap");
 let indhold = document.getElementById("indholdpopup");
 // let helesiden = document.getElementById("retterBaggrund");
 
+// Get the button and collapsible content element by their IDs
+var button = document.getElementById("næringsindholdknap");
+var content = document.getElementById("collapsible-content");
+
 
 // Boxen åbner:
 infoknapper.forEach(function(åbenBox) {
@@ -83,18 +87,51 @@ let retter = document.getElementById("cardID");
 let vælge2Retter = document.getElementById("retterBaggrund");
 let grønneKasse = document.getElementById("rettensNavn");
 
+
+
+
+let billede1 = true;
 billedet.addEventListener("click", rødMarkering);
+
 function rødMarkering(){
+
+  if(billede1){
+    billedet.style.borderTop = "0px";
+    billedet.style.borderLeft = "0px";
+    billedet.style.borderRight = "20px";
+    billedet.style.borderBottom = "0px";
+    billedet.style.borderStyle = "solid";
+    billedet.style.borderColor = "#27406B";
+    billedet.style.borderRadius = "14px";
+    billede1 = false;
+  }
+  else{
   billedet.style.borderTop = "0px";
   billedet.style.borderLeft = "0px";
-  billedet.style.borderRight = "20px";
+  billedet.style.borderRight = "0px";
   billedet.style.borderBottom = "0px";
-
-
-  billedet.style.borderStyle = "solid";
-  billedet.style.borderColor = "#27406B";
-  billedet.style.borderRadius = "14px";
+  billedet.style.borderStyle = "none";
+  billedet.style.borderColor = "transparent";
+  billede1 = true;
+  }
+  
 }
+
+
+
+
+// Add a click event listener to the button
+button.addEventListener("click", function() {
+  // Toggle the display property of the content element
+  if (content.style.display === "none" || content.style.display === "") {
+    content.style.display = "block";
+    button.textContent = "Skjul næringsindhold"; // Change button text when content is visible
+  } else {
+    content.style.display = "none";
+    button.textContent = "Se næringsindhold"; // Change button text when content is hidden
+  }
+});
+
 
 
     //For at fjerne den røde markering - VIRKER IKKE!
