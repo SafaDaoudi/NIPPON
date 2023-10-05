@@ -1027,19 +1027,7 @@ body {
 /***** BETALING ******/
 .betalingMain {
     padding-top: 84px;
-}
-
-.bestiling table {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    border: #068FFF;
-}
-
-.bestiling th {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
+    font-family: 'Dosis-regular';
 }
 
 .prisbox {
@@ -1050,8 +1038,58 @@ body {
     margin-right: auto;
     margin-bottom: 50px;
     padding-bottom: 20px;
-    background-color: #8EACCD;
+    padding-top: 1%;
+    margin-top: 2%;
+    border: #45acA5 solid 3px;
+    border-radius: 6px;
     max-width: 600px;
+}
+
+.bestiling {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    gap: 15%;
+    margin: auto;
+    line-height: 35pt;
+}
+.bestiling img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.bestilingRabat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    gap: 70%;
+    margin: auto;
+    line-height: 35pt;
+    font-style: italic;
+}
+
+.bestilingIalt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    gap: 70%;
+    margin: auto;
+    font-family: 'Dosis-bold';
+}
+
+.italic {
+    font-style: italic;
+}
+.bold {
+    font-family: 'Dosis-bold';
 }
 
 .prisimg {
@@ -1068,6 +1106,7 @@ body {
 .prisbox h2{
     display: flex;
     justify-content: center;
+    padding-bottom: 3%;
 }
 
 .betalingHR {
@@ -1075,7 +1114,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 70%;
-    background-color: #068FFF;
+    background-color: #45acA5;
     border: none;
     height: 2px;
     margin-left: auto;
@@ -1092,26 +1131,59 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+.kortoplysninger input {
+    border-radius: 6px;
+    padding: 2%;
+}
+
+.kortoplysninger h2 {
+    margin-bottom: 5%;
+}
+
+.kortnr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.kortnr input {
+    width: 40%;
+    gap: 10%;
+}
  
 .betalbtn {
     display: flex;
     justify-content: center;
-    background-color: #19376D;
+    margin-top: 10%;
+
+    border: solid 1px #ff6c5c;
+    border-radius: 15px;
+    background-color: #27406b;
+    padding: 5%;
+}
+.betalbtn a {
     color: #FAFAFA;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    text-decoration: none;
 }
 
 .Altbetalbtn {
     display: flex;
     justify-content: center;
-    background-color: #19376D;
-    color: #FAFAFA;
     margin-top: 20px;
     margin-bottom: 20px;
     width: 220px;
     margin-right: auto;
     margin-left: auto;
+
+    border: #45acA5 solid 2px;
+    border-radius: 15px;
+    background-color: #27406b;
+    padding: 2%;
+}
+
+.Altbetalbtn a {
+    color: #FAFAFA;
+    text-decoration: none;
 }
 
 /***** BESTILING *****/
