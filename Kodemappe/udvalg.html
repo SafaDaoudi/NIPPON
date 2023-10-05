@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style2.css">
     <script src="script2.js" defer></script>
+    <!-- <script src="script3.js" defer></script> -->
 
 </head>
 <body>
@@ -85,13 +86,13 @@
     <h2>Retter</h2> <br>
     <h3> Vælg min. 2 retter</h3>
     
-    <div class="cards">
-        <div class="card">
-            <img src="billeder/retter/retter-billede1.png" alt="">
+    <div class="cards" id="cardsID">
+        <div class="card" id="cardID">
+            <img id="retten" src="billeder/retter/retter-billede1.png" alt="Tonkatsu-foto">
         
             
             <div class="korttekst">
-            <p>Tonkatsu</p>
+            <p id="rettensNavn">Tonkatsu</p>
             <!-- Nærringsindhold-Modal -->
             <img id="infoknap" src="billeder/infoknap.png" alt="infobutton">
             <div id="indholdpopup"> 
@@ -109,7 +110,7 @@
                 <p>
                     "Smag den udsøgte japanske delikatesse Tonkatsu, hvor mørt, saftigt svinekød er indhyllet i en sprød, gyldenbrun pankorasp. Med sin uimodståelige kombination af krydderier og teksturer er Tonkatsu en kulinarisk fornøjelse, der vækker dine smagsløg til live. Lad dig forføre af denne skønne smagsoplevelse og dyk ned i den autentiske japanske køkkenverden."
                 </p>
-                <button id="næringsindholdknap"> Se næringsindhold (pil eller ej?)</button>
+                <button id="næringsindholdknap"> Se næringsindhold</button>
                 
                 <div id="energiFOTO">
                 <img id="energi" src="billeder/energi.png" alt="Energi/kcal">
@@ -121,11 +122,11 @@
         </div>
 
 
-        <div class="card">
-            <img src="billeder/retter/retter-billede2.png" alt="">
+        <div class="card" id="cardID">
+            <img id="retten" src="billeder/retter/retter-billede2.png" alt="">
            
             <div class="korttekst">
-            <p>Japansk karry</p>
+            <p id="rettensNavn">Japansk karry</p>
             <img id="infoknap" src="billeder/infoknap.png" alt="infobutton"> 
             <div id="indholdpopup"> 
                 <img id="lillefoto" src="billeder/retter/billede2-BOX.png" alt="lillefoto">
@@ -145,7 +146,7 @@
                     Grundingredienserne er løg, gulerødder og kartofler,
                     med kødvalg som oftest er oksekød, svinekød eller kylling.
                 </p>
-                <button id="næringsindholdknap"> Se næringsindhold (pil eller ej?)</button>
+                <button id="næringsindholdknap"> Se næringsindhold</button>
                 
                 <div id="energiFOTO">
                 <img id="energi" src="billeder/energi.png" alt="Energi/kcal">
@@ -157,11 +158,11 @@
         </div>
 
         
-        <div class="card">
-        <img src="billeder/retter//retter-billede3.png" alt="">
+        <div class="card" id="cardID">
+        <img id="retten" src="billeder/retter//retter-billede3.png" alt="">
             
             <div class="korttekst">
-            <p>Onigiri</p>
+            <p id="rettensNavn">Onigiri</p>
             <img id="infoknap" src="billeder/infoknap.png" alt="infobutton"> 
             <div id="indholdpopup"> 
                 <img id="lillefoto" src="billeder/retter/billede3-BOX.png" alt="lillefoto">
@@ -178,7 +179,7 @@
                 <p>
                     Den perfekte harmoni mellem delikat sushi ris og fyldige, velsmagende ingredienser indhyllet i et let tangblad. En bid af vores Onigiri er en rejse til Japan, hvor tradition møder smag, og hver mundfuld er et eventyr i sig selv."
                 </p>
-                <button id="næringsindholdknap"> Se næringsindhold (pil eller ej?)</button>
+                <button id="næringsindholdknap"> Se næringsindhold</button>
                 
                 <div id="energiFOTO">
                 <img id="energi" src="billeder/energi.png" alt="Energi/kcal">
@@ -191,10 +192,10 @@
         </div>
  
 
-        <div class="card">
-        <img src="billeder/retter//retter-billede4.png" alt="">
+        <div class="card" id="cardID">
+        <img id="retten" src="billeder/retter//retter-billede4.png" alt="">
         <div class="korttekst">
-            <p>Gyoza</p>
+            <p id="rettensNavn">Gyoza</p>
             <img id="infoknap" src="billeder/infoknap.png" alt="infobutton"> 
             <div id="indholdpopup"> 
                 <img id="lillefoto" src="billeder/noFOTOdumplingMED404.png" alt="lillefoto">
@@ -226,18 +227,15 @@
     <!-- Række 2 -->
 
      <div class="cards">       
-        <div class="card">
-        <img src="billeder/retter/retter-billede5.png" alt="">
+        <div class="card" id="cardID">
+        <img id="retten" src="billeder/retter/retter-billede5.png" alt="">
             
             <div class="korttekst">
-            <p>Poke Bowl</p>
+            <p id="rettensNavn">Poke Bowl</p>
             <img id="infoknap" src="billeder/infoknap.png" alt="infobutton"> 
             <div id="indholdpopup"> 
                 <img id="lillefoto" src="billeder/noFOTOdumplingMED404.png" alt="lillefoto">
                 
-                <div id="farvorit">
-                    <p>Børnenes Favorit</p> 
-                </div>
 
                 <div id="luk">
                     <button id="lukKnap">Luk</button>
@@ -258,18 +256,15 @@
         </div>
 
 
-        <div class="card">
-            <img src="billeder/retter/retter-billede6.png" alt="">
+        <div class="card" id="cardID">
+            <img id="retten" src="billeder/retter/retter-billede6.png" alt="">
            
             <div class="korttekst">
-            <p>Ramen</p>
+            <p id="rettensNavn">Ramen</p>
             <img id="infoknap" src="billeder/infoknap.png" alt="infobutton"> 
             <div id="indholdpopup"> 
                 <img id="lillefoto" src="billeder/noFOTOdumplingMED404.png" alt="lillefoto">
-                
-                <div id="farvorit">
-                    <p>Børnenes Favorit</p> 
-                </div>
+
 
                 <div id="luk">
                     <button id="lukKnap">Luk</button>
@@ -290,19 +285,16 @@
         </div>
 
         
-        <div class="card">
-        <img src="billeder/retter//retter-billede7.png" alt="">
+        <div class="card" id="cardID">
+        <img id="retten" src="billeder/retter//retter-billede7.png" alt="">
             
             <div class="korttekst">
-            <p>Okonomiyaki</p>
+            <p id="rettensNavn">Okonomiyaki</p>
             <img id="infoknap" src="billeder/infoknap.png" alt="infobutton"> 
             <div id="indholdpopup"> 
                 <img id="lillefoto" src="billeder/noFOTOdumplingMED404.png" alt="lillefoto">
                 
-                <div id="farvorit">
-                    <p>Børnenes Favorit</p> 
-                </div>
-
+                
                 <div id="luk">
                     <button id="lukKnap">Luk</button>
                 </div>
@@ -322,17 +314,14 @@
         </div>
  
 
-        <div class="card">
-        <img src="billeder/retter//retter-billede8.png" alt="">
+        <div class="card" id="cardID">
+        <img id="retten" src="billeder/retter//retter-billede8.png" alt="">
         <div class="korttekst">
-            <p>Donburi</p>
+            <p id="rettensNavn">Donburi</p>
             <img id="infoknap" src="billeder/infoknap.png" alt="infobutton"> 
             <div id="indholdpopup"> 
                 <img id="lillefoto" src="billeder/noFOTOdumplingMED404.png" alt="lillefoto">
                 
-                <div id="farvorit">
-                    <p>Børnenes Favorit</p> 
-                </div>
 
                 <div id="luk">
                     <button id="lukKnap">Luk</button>
@@ -355,20 +344,17 @@
 
 
     <!-- Række 3 -->
-     <div class="cards">
+     <div class="cards" id="cardS-ID">
 
-        <div class="card">
-        <img src="billeder/retter/retter-billede10.png" alt="">
+        <div class="card" id="cardID">
+        <img id="retten" src="billeder/retter/retter-billede10.png" alt="">
             
             <div class="korttekst">
-            <p>Okse i teriyaki</p>
+            <p id="rettensNavn">Okse i teriyaki</p>
             <img id="infoknap" src="billeder/infoknap.png" alt="infobutton"> 
             <div id="indholdpopup"> 
                 <img id="lillefoto" src="billeder/noFOTOdumplingMED404.png" alt="lillefoto">
                 
-                <div id="farvorit">
-                    <p>Børnenes Favorit</p> 
-                </div>
 
                 <div id="luk">
                     <button id="lukKnap">Luk</button>
@@ -388,18 +374,14 @@
         </div>
 
 
-        <div class="card">
-            <img src="billeder/retter/retter-billede11.png" alt="">
+        <div class="card" id="cardID">
+            <img id="retten" src="billeder/retter/retter-billede11.png" alt="">
            
             <div class="korttekst">
-            <p>Udon nudler</p>
+            <p id="rettensNavn">Udon nudler</p>
             <img id="infoknap" src="billeder/infoknap.png" alt="infobutton"> 
             <div id="indholdpopup"> 
                 <img id="lillefoto" src="billeder/noFOTOdumplingMED404.png" alt="lillefoto">
-                
-                <div id="farvorit">
-                    <p>Børnenes Favorit</p> 
-                </div>
 
                 <div id="luk">
                     <button id="lukKnap">Luk</button>
@@ -421,18 +403,15 @@
         </div>
 
         
-        <div class="card">
-        <img src="billeder/retter//retter-billede9.jpg" alt="">
+        <div class="card" id="cardID">
+        <img id="retten" src="billeder/retter//retter-billede9.jpg" alt="">
             
             <div class="korttekst">
-            <p>Dumplings</p>
+            <p id="rettensNavn">Dumplings</p>
             <img id="infoknap" src="billeder/infoknap.png" alt="infobutton"> 
             <div id="indholdpopup"> 
                 <img id="lillefoto" src="billeder/noFOTOdumplingMED404.png" alt="lillefoto">
                 
-                <div id="farvorit">
-                    <p>Børnenes Favorit</p> 
-                </div>
 
                 <div id="luk">
                     <button id="lukKnap">Luk</button>
@@ -454,17 +433,13 @@
         </div>
  
 
-        <div class="card">
-        <img src="billeder/retter//retter-billede12.png" alt="">
+        <div class="card" id="cardID">
+        <img id="retten" src="billeder/retter//retter-billede12.png" alt="">
         <div class="korttekst">
-            <p>Japansk Wok</p>
+            <p id="rettensNavn">Japansk Wok</p>
             <img id="infoknap" src="billeder/infoknap.png" alt="infobutton"> 
             <div id="indholdpopup"> 
                 <img id="lillefoto" src="billeder/noFOTOdumplingMED404.png" alt="lillefoto">
-                
-                <div id="farvorit">
-                    <p>Børnenes Favorit</p> 
-                </div>
 
                 <div id="luk">
                     <button id="lukKnap">Luk</button>
@@ -489,20 +464,16 @@
     <!-- Række 4 (sidste række) -->
 
 
-    <div class="cards">
+    <div class="cards" id="cardS-ID">
        
-        <div class="card">
-        <img src="billeder/retter/retter-billede13.png" alt="">
+        <div class="card" id="cardID">
+        <img id="retten" src="billeder/retter/retter-billede13.png" alt="">
             
             <div class="korttekst">
-            <p>Oyakodon</p>
+            <p id="rettensNavn">Oyakodon</p>
             <img id="infoknap" src="billeder/infoknap.png" alt="infobutton"> 
             <div id="indholdpopup"> 
                 <img id="lillefoto" src="billeder/noFOTOdumplingMED404.png" alt="lillefoto">
-                
-                <div id="farvorit">
-                    <p>Børnenes Favorit</p> 
-                </div>
 
                 <div id="luk">
                     <button id="lukKnap">Luk</button>
@@ -523,18 +494,14 @@
         </div>
 
 
-        <div class="card">
-            <img src="billeder/retter/retter-billede14.png" alt="">
+        <div class="card" id="cardID">
+            <img id="retten" src="billeder/retter/retter-billede14.png" alt="">
            
             <div class="korttekst">
-            <p>Ande bowl</p>
+            <p id="rettensNavn">Ande bowl</p>
             <img id="infoknap" src="billeder/infoknap.png" alt="infobutton">
             <div id="indholdpopup"> 
                 <img id="lillefoto" src="billeder/noFOTOdumplingMED404.png" alt="lillefoto">
-                
-                <div id="farvorit">
-                    <p>Børnenes Favorit</p> 
-                </div>
 
                 <div id="luk">
                     <button id="lukKnap">Luk</button>
@@ -556,19 +523,15 @@
         </div>
 
         
-        <div class="card">
-        <img src="billeder/retter//retter-billede15.png" alt="">
+        <div class="card" id="cardID">
+        <img id="retten" src="billeder/retter//retter-billede15.png" alt="">
             
             <div class="korttekst">
-            <p>Miso suppe</p>
+            <p id="rettensNavn">Miso suppe</p>
             <img id="infoknap" src="billeder/infoknap.png" alt="infobutton"> 
             <div id="indholdpopup"> 
                 <img id="lillefoto" src="billeder/noFOTOdumplingMED404.png" alt="lillefoto">
-                
-                <div id="farvorit">
-                    <p>Børnenes Favorit</p> 
-                </div>
-
+             
                 <div id="luk">
                     <button id="lukKnap">Luk</button>
                 </div>
@@ -589,17 +552,14 @@
         </div>
  
 
-        <div class="card">
-        <img src="billeder/retter//retter-billede16.png" alt="">
+        <div class="card" id="cardID">
+        <img id="retten" src="billeder/retter//retter-billede16.png" alt="">
         <div class="korttekst">
-            <p>Japansk ris</p>
+            <p id="rettensNavn">Japansk ris</p>
             <img id="infoknap" src="billeder/infoknap.png" alt="infobutton"> 
             <div id="indholdpopup"> 
                 <img id="lillefoto" src="billeder/noFOTOdumplingMED404.png" alt="lillefoto">
                 
-                <div id="farvorit">
-                    <p>Børnenes Favorit</p> 
-                </div>
 
                 <div id="luk">
                     <button id="lukKnap">Luk</button>

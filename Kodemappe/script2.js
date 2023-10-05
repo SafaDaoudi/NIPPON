@@ -42,16 +42,7 @@ lukknap.forEach(function(luk) {
  }
 
 
-
-//  protein.addEventListener("click",visProteinBox);
-
-//  function visProteinBox(){
-//    proteinBox.style.display = "block";
-//  }
-
-
-
-// Se udvalg - Ikon siden åbner og lukker
+// Se udvalg - Ikon siden åbner og lukker:
 let protein = document.getElementById("protein");
 let proteinBox = document.getElementById("proteinKatalog");
 let lukProteinKnap = document.getElementById("lukProtein")
@@ -74,3 +65,91 @@ protein.style.display = "flex";
 
 
 
+
+
+//Se udvalg - Valg af retter med markering:
+//Idéen er at når man trykker på billedet af retten
+// som her i JavaScript hedder "billedet" (retten i HTML),
+// så skal hele diven, den der hedder "retter" (card i HTML)
+// få en rød border.
+
+//Det fungere hvis det er billedet der skal have en border.
+//Hvis det er hele diven ("card"), så fungere det ikke - hmm...
+
+// Virker kun på det første billed!
+
+let billedet = document.getElementById("retten");
+let retter = document.getElementById("cardID");
+let vælge2Retter = document.getElementById("retterBaggrund");
+let grønneKasse = document.getElementById("rettensNavn");
+
+billedet.addEventListener("click", rødMarkering);
+function rødMarkering(){
+  billedet.style.borderTop = "0px";
+  billedet.style.borderLeft = "0px";
+  billedet.style.borderRight = "20px";
+  billedet.style.borderBottom = "0px";
+
+
+  billedet.style.borderStyle = "solid";
+  billedet.style.borderColor = "#27406B";
+  billedet.style.borderRadius = "14px";
+}
+
+
+    //For at fjerne den røde markering - VIRKER IKKE!
+// grønneKasse.addEventListener("click", fjernMarkering);
+
+    // function fjernMarkering(){
+//   billedet.style.borderTop = "0px";
+//   billedet.style.borderLeft = "0px";
+//   billedet.style.borderRight = "0px";
+//   billedet.style.borderBottom = "0px";
+
+//   billedet.style.borderStyle = "none";
+//   billedet.style.borderColor = "transparent";
+// }
+
+
+
+    //For at fjerne den røde markering - VIRKER IKKE!
+// vælge2Retter.addEventListener("click", fjernMarkering);
+
+// function fjernMarkering(){
+  //   billedet.style.borderTop = "0px";
+  //   billedet.style.borderLeft = "0px";
+  //   billedet.style.borderRight = "0px";
+  //   billedet.style.borderBottom = "0px";
+  
+  //   billedet.style.borderStyle = "none";
+  //   billedet.style.borderColor = "green";
+  // }
+  
+  
+        // Fjernelse af markeringen ved kun at trykke på billedet - VIRKER IKKE!
+    // billedet.addEventListener("click", ingenMarkering);
+    // function ingenMarkering(){
+    //   billedet.style.borderTop = "0px";
+    //   billedet.style.borderLeft = "0px";
+    //   billedet.style.borderRight = "0px";
+    //   billedet.style.borderBottom = "0px";
+    
+    //   billedet.style.borderStyle = "none";
+    //   billedet.style.borderColor = "transparent";
+    //   billedet.style.borderRadius = "0px";
+    // }
+
+  
+  // Markering af hele diven - VIRKER IKKE!
+  // function rødMarkering(){
+    //   retter.style.borderTop = "0px";
+    //   retter.style.borderLeft = "0px";
+    //   retter.style.borderRight = "20px";
+    //   retter.style.borderBottom = "0px";
+    
+    //   retter.style.borderStyle = "solid";
+    //   retter.style.borderColor = "#27406B";
+    //   retter.style.borderRadius = "14px";
+    // }
+    
+    

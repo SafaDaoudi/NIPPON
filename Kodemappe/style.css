@@ -395,7 +395,7 @@ body {
     flex-direction: column;
     align-items: center;
 
-    background-color: #fcf3e3;
+    background-color: #fff9ee;
     width: 72%;
  
     padding-bottom: 50px;
@@ -448,6 +448,7 @@ body {
  
  .protein img {
     width: 80%;
+    cursor: pointer;
  }
 
  #proteinKatalog{
@@ -514,13 +515,13 @@ body {
     background-color: rgb(255, 255, 255);
 
     width: 450px;
-    height: 710px;
+    height: 580px;
     
     /* for placeringen af den store div */
     left: 20%;
     top: -100px;
 
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 15px 15px 15px 15px;
 
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
@@ -545,7 +546,7 @@ body {
 
 #indholdpopup p{
     text-align: justify;
-    padding:10px 7% 0% 9%;
+    padding:2px 7% 0% 9%;
     line-height: 22px;
     
     color: #27406B;
@@ -555,7 +556,6 @@ body {
 
 #farvorit {
     display: flex;
-    flex-direction: column;
     position: absolute;
     text-align: center;
     background-color: #27406B;
@@ -706,12 +706,26 @@ body {
  .card {
     display: flex;
     flex-wrap: wrap;
- }
+    
+    
+    /* Bruges til JavaScript */
+    border-style: none;
+    border-width: 0px;
+    border-color: transparent;
+    border-radius: 0px;
+    /* Bruges til JavaScript */
+
+ 
+  }
+ 
  
  .card p{
     font-family: 'titweb-semibold';
     color:#f8efe3;
  }
+
+
+
 
 .korttekst{
     display: flex;
