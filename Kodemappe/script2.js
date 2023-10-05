@@ -83,6 +83,7 @@ protein.style.display = "flex";
 // Virker kun på det første billed!
 
 let billedet = document.getElementById("retten");
+let retten2 = document.getElementById("retten2");
 let retter = document.getElementById("cardID");
 let vælge2Retter = document.getElementById("retterBaggrund");
 let grønneKasse = document.getElementById("rettensNavn");
@@ -116,6 +117,43 @@ function rødMarkering(){
   }
   
 }
+
+
+
+// Når man trykker på ret nr.1 kommer markeringen frem på ret nr.2 
+
+// let billede2 = true;
+// retten2.addEventListener("click", rødMarkering);
+
+// function rødMarkering(){
+
+//   if(billede2){
+//     retten2.style.borderTop = "0px";
+//     retten2.style.borderLeft = "0px";
+//     retten2.style.borderRight = "20px";
+//     retten2.style.borderBottom = "0px";
+//     retten2.style.borderStyle = "solid";
+//     retten2.style.borderColor = "#27406B";
+//     retten2.style.borderRadius = "14px";
+//     billede2 = false;
+//   }
+//   else{
+//   retten2.style.borderTop = "0px";
+//   retten2.style.borderLeft = "0px";
+//   retten2.style.borderRight = "0px";
+//   retten2.style.borderBottom = "0px";
+//   retten2.style.borderStyle = "none";
+//   retten2.style.borderColor = "transparent";
+//   billede2 = true;
+//   }
+  
+// }
+
+
+
+
+
+
 
 
 
