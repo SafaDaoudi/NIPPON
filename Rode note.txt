@@ -10,4 +10,5 @@ Betal på betalingssiden skal linke til kvitteringssiden.
 Login-logo skal linke til Prisoversigt.
 
 Hvorfor har vi ikke lavet en login-side.
+Læs mere - link til 404
 

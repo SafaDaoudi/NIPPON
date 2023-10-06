@@ -1,0 +1,24 @@
+Som den hovede ansvarlige faktor for sidens 
+
+Som led i en god UX/UI brugeroplevelse, blev der tidligt i processen afgjort at interaktionsdesign skal have en væsentlig optræden på hjemmesiden. Dertil er der benyttede forskellige interaktive/"klikbare" elementer som en del af realiseringen.
+
+
+I praksis har JavaScript været afgørende og "hovedansvarlig" for disse "interaktive/klikbare/call-to-action" elementer.
+
+
+
+HTML:
+- DIV
+- Class vs. ID
+
+CSS:
+- Generelle stylingstendenser
+- Display
+- Z - index
+
+JavaScript:
+- Variables
+- Arrays
+- Booleans
+- EventListeners & Functions
+- Collapse

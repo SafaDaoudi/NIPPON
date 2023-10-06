@@ -14,9 +14,7 @@ let lukknap = document.querySelectorAll("#lukKnap");
 let indhold = document.getElementById("indholdpopup");
 // let helesiden = document.getElementById("retterBaggrund");
 
-// Get the button and collapsible content element by their IDs
-var button = document.getElementById("næringsindholdknap");
-var content = document.getElementById("collapsible-content");
+
 
 
 // Boxen åbner:
@@ -158,19 +156,24 @@ function rødMarkering(){
 
 //SE NÆRINGSINDHOLD//
 
+// Variables via ID til næringsindhold:
+let button = document.getElementById("næringsindholdknap");
+let content = document.getElementById("collapsible-content");
+
+
 // Der tilføjes en EventListener med klik funktion på knappen:
 button.addEventListener("click", function() {
   // If-sætning starter her:
   if (content.style.display === "none" || content.style.display === "") {
     content.style.display = "block";
-    button.textContent = "Skjul næringsindhold"; // Change button text when content is visible
+    button.textContent = "Skjul næringsindhold"; // Ændre knappens tekst når billedet vises.
   } else {
     content.style.display = "none";
-    button.textContent = "Se næringsindhold"; // Change button text when content is hidden
+    button.textContent = "Se næringsindhold"; // Ændrer teksten tilbage når billedet er skjult.
   }
 });
 
-
+  
 
     //For at fjerne den røde markering - VIRKER IKKE!
 // grønneKasse.addEventListener("click", fjernMarkering);
