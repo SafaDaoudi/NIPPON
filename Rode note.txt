@@ -1,0 +1,13 @@
+Experience mapping er i højere grad brugercenteret i modsætning til f.eks. user journey map, som er mere virksomheds-/produktcenteret.
+
+Med andre ord, så har vi i vores projekt haft skærpet fokus på bruger oplevelserne forbundet med dét at bestille en japansk måltidskasse. Her skelnede vi mellem før, under og efter bestillingen af måltidskassen og hvilke opgaver, tanker og følelse kunden oplever under disse faser, som fremgår af modellen.
+
+Vi har bruget dette experience map til at danne grundlag at forstå brugeren bedre og som led i det videre forløb hvor brugeren skal sammentænkes med virksomhedens ønsker (udfra projektbeskrivelsen).  
+
+
+Prisoversigten er ikke færdig.
+Betal på betalingssiden skal linke til kvitteringssiden.
+Login-logo skal linke til Prisoversigt.
+
+Hvorfor har vi ikke lavet en login-side.
+
