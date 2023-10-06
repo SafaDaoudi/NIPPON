@@ -156,11 +156,11 @@ function rødMarkering(){
 
 
 
+//SE NÆRINGSINDHOLD//
 
-
-// Add a click event listener to the button
+// Der tilføjes en EventListener med klik funktion på knappen:
 button.addEventListener("click", function() {
-  // Toggle the display property of the content element
+  // If-sætning starter her:
   if (content.style.display === "none" || content.style.display === "") {
     content.style.display = "block";
     button.textContent = "Skjul næringsindhold"; // Change button text when content is visible

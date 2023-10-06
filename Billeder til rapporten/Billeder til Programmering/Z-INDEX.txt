@@ -1,0 +1,11 @@
+For at hele nav-baren skal være synlig på hele siden, kræver dette en indstilling på headerens Z-index.
+
+Som afprøvet ses det, at et højere Z-index på headeren, har direkte indflydelse på f.eks. "Se udvalg"-siden.
+
+Med et højere Z-index på headeren, vil dette medføre en "blokering" af Javascript-koden som indgår i sektionen, som nu er placeret bag headeren (SE BILLEDE X). Det vil sige at div'en "indholdspopup", som indeholder info om retten, ikke kan vises. 
+
+Om vendt, vil et højere Z-index på sektionen medføre at nav-baren ikke er synlig i det område hvor sektionen er placeret (SE BILLEDE X).
+
+
+Den endelige løsning var ikke at tildele sektionen noget Z-index. Her vil nav-baren være synlig i "toppen" af skærmen (hvor billederne ikke er placeret), hvorimod at billederne vil være i foregrunden når der skrolles ned. På den måde bliver Javascript koden ikke blokeret, og navbaren kan samtidig tilgås på siden. 
+ 

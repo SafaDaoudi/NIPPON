@@ -405,7 +405,6 @@ body {
  
     padding-bottom: 50px;
     padding-top: 7%;
-    z-index: -20;
  }
  
  .småbtn {
@@ -780,7 +779,7 @@ body {
     width: 8%;
     margin-top: -11%;
     margin-left: 90%;
-    position: relative;}
+    position: absolute;}
 
 #infoknap:hover{
     cursor: pointer;
