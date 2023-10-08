@@ -11,10 +11,16 @@
 </head>
 <body>
     <header>
-        <a class="logo" href="index.html"><img src="billeder/logo/dombling_logo.png" alt=""></a>
+        <header>
+            <a class="logo-container" href="index.html">
+                <img class="logo" src="billeder/logo/dombling_logo.png" alt="">
+                <img class="logo-hover" src="billeder/logo/dombling_logo_hover.png" alt="">
+            </a>
+        </header>
+        
     <nav>
         <div class="navTekst">
-            <a id="udvalgNav" href="udvalg.html">Se udvalg</a>
+            <a id="udvalgNav" href="seudvalg.html">Se udvalg</a>
             <a class="navLinks" href="404.html">Stem</a>
             <a class="navLinks" href="404.html">Tilkøb</a>
             <a class="navLinks" href="404.html">Om os</a>
@@ -34,12 +40,12 @@
             <div class="antal">
                 <h4>Vælg antal personer og opskrifter</h4>
                 <div class="antalInfo">
-                    <div>
+                    <div class="dumplingTal_tekst">
                         <p>Personer</p>
                         <p>Heraf børn</p>
                         <p>Måltider</p>
                     </div>
-                    <div>
+                    <div class="dumplingTal_sektion">
                         <div class="dumplingTal">
                             <img src="billeder/ikoner/1-7/1.png" alt="#">
                             <img src="billeder/ikoner/1-7/2.png" alt="#">
@@ -57,11 +63,14 @@
                         </div>
 
                         <div class="dumplingTal">
-                            <img src="billeder/ikoner/1-7/2.png" alt="#">
-                            <img src="billeder/ikoner/1-7/3.png" alt="#">
-                            <img src="billeder/ikoner/1-7/4.png" alt="#">
-                            <img src="billeder/ikoner/1-7/5.png" alt="#">
-                            <img id="dump7" src="billeder/ikoner/1-7/7.png" alt="#">
+                                <img src="billeder/ikoner/1-7/2.png" alt="#">
+                                <img src="billeder/ikoner/1-7/3.png" alt="#">
+                                <img src="billeder/ikoner/1-7/4.png" alt="#">
+                                <img src="billeder/ikoner/1-7/5.png" alt="#">
+                                <div class="dumpling7">
+                                    <img id="dump7" src="billeder/ikoner/1-7/7.png" alt="#">
+                            </div>
+
                         </div>
                     </div>
 
@@ -96,79 +105,14 @@
                 </div>
             </div>
 
-            <hr>
-
-            <div class="prisoversigt">
-                <h4>Prisoversigt</h4>
-            <table>
-                <tr>
-                    <td class="bold">x st. Serveringer</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>x stk. Voksne, x måltid</td>
-                    <td>xx kr.</td>
-                </tr>
-                <tr>
-                    <td>x stk. Børn, x måltid</td>
-                    <td>xx kr.</td>
-                </tr>
-                <tr>
-                    <td class="bold">x st. Madpakker</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>x stk. Madpakker voksne</td>
-                    <td>xx kr.</td>
-                </tr>
-                <tr>
-                    <td>x stk. Madpakker Børn</td>
-                    <td>xx kr.</td>
-                </tr>
-            </table>
-            </div>
-
-            <hr>
-
-            <div class="prisoversigt">
-                <table>
-                    <tr>
-                        <td>Pris</td>
-                        <td>xx kr.</td>
-                    </tr>
-                    <tr>
-                        <td class="italic">Gennemsnitspris per person</td>
-                        <td class="italic">xx kr.</td>
-                    </tr>
-                    <tr>
-                        <td class="italic">Levering</td>
-                        <td class="italic">xx kr.</td>
-                    </tr>
-                </table>
-            </div>
-
-            <div class="total bold">
-                <table>
-                    <tr>
-                        <td>TOTAL</td>
-                        <td>xx kr.</td>
-                    </tr>
-                </table>
-            </div>
-
-            <div class="vælgRetterBtn">
+            <a class="vælgRetterBtn" href="udvalg.html">
                 <p>Vælg dine retter</p>
-            </div>
-
-            <div class="rabat">
-                <input type="Indløs rabatkode" placeholder="Rabatkode">
-                <a href="#">Indløs</label></a>
-            </div>
+            </a>
 
             <hr>
 
             <div class="opsumering">
-                <h1>Opsumering</h1>
+                <h1>Luksuskassen</h1>
                 <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna 
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
@@ -182,9 +126,9 @@
                     </tr>
                 </table>
 
-                <div class="luksusbtn">
+                <a class="vælgRetterBtn" href="404.html">
                     <p>Bestil luksuskassen</p>
-                </div>
+                </a>
 
             </div>
 
