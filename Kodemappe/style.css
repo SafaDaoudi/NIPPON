@@ -17,7 +17,6 @@ body {
     src: url(fonts/Bento\ .ttf);
 }
 
-
 @font-face {
     font-family: 'Dosis-bold';
     src: url(fonts/Dosis-bold.ttf);
@@ -37,7 +36,6 @@ body {
     font-family: 'Dosis-semibold';
     src: url(fonts/Dosis-SemiBold.ttf);
 }
-
 
 @font-face {
     font-family: 'Dosis-Extrabold';
@@ -99,8 +97,6 @@ body {
     flex-direction: column;
     align-items: center;
 }
-
-
 
 .velkomstimg{
     display: flex;
@@ -510,11 +506,6 @@ body {
     cursor: pointer;
 
 }
-
-
-
-
-
 
  #indholdpopup{
     display:none;
@@ -1362,6 +1353,95 @@ body {
     color: #FAFAFA;
 }
 
+
+/******* KVITTERING *******/
+
+.kvitteringMain {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    padding-top: 1%;
+    max-width: 600px;
+}
+.kvitteringtak {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 2%;
+}
+.kvitteringimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin-top: 10%;
+    margin-bottom: 2%;
+}
+
+.bestiling {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    gap: 15%;
+    margin: auto;
+    line-height: 35pt;
+}
+.bestiling img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.bestilingRabat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    gap: 70%;
+    margin: auto;
+    line-height: 35pt;
+    font-style: italic;
+}
+
+.bestilingIalt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    gap: 70%;
+    margin: auto;
+    font-family: 'Dosis-bold';
+}
+
+.forsidebtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7%;
+
+    border: solid 1px #ff6c5c;
+    border-radius: 15px;
+    background-color: #27406b;
+    width: 50%;
+   padding: 2%;
+}
+.forsidebtn a {
+    color: #FAFAFA;
+    text-decoration: none;
+    font-family: 'Dosis-regular';
+}
 
 /***** 404 ****/
 .fejlSide {
