@@ -1,9 +1,4 @@
-Experience mapping er i højere grad brugercenteret i modsætning til f.eks. user journey map, som er mere virksomheds-/produktcenteret.
-
-Med andre ord, så har vi i vores projekt haft skærpet fokus på bruger oplevelserne forbundet med dét at bestille en japansk måltidskasse. Her skelnede vi mellem før, under og efter bestillingen af måltidskassen og hvilke opgaver, tanker og følelse kunden oplever under disse faser, som fremgår af modellen.
-
-Vi har bruget dette experience map til at danne grundlag at forstå brugeren bedre og som led i det videre forløb hvor brugeren skal sammentænkes med virksomhedens ønsker (udfra projektbeskrivelsen).  
-
+TO-DO-LISTE:
 
 Prisoversigten er ikke færdig.
 Betal på betalingssiden skal linke til kvitteringssiden.
@@ -30,6 +25,84 @@ Kodning:
 
 - Login skal hedde "Profil".
 - Sikre at alle sider har den samme header og footer.
+
+________________________________________________________
+
+
+
+
+
+
+
+
+
+!!! UX/UI !!!
+
+Experience mapping er i højere grad brugercenteret i modsætning til f.eks. user journey map, som er mere virksomheds-/produktcenteret.
+
+Med andre ord, så har vi i vores projekt haft skærpet fokus på bruger oplevelserne forbundet med dét at bestille en japansk måltidskasse. Her skelnede vi mellem før, under og efter bestillingen af måltidskassen og hvilke opgaver, tanker og følelse kunden oplever under disse faser, som fremgår af modellen.
+
+Vi har bruget dette experience map til at danne grundlag at forstå brugeren bedre og som led i det videre forløb hvor brugeren skal sammentænkes med virksomhedens ønsker (udfra projektbeskrivelsen). 
+
+
+
+
+
+!!! METODE !!!
+
+Vi har valgt at bruge tænke-højt-test af wireframes på en testperson der passer målgruppebeskrivelsen. Testen og de tilhørende brugeropgaver, bidrog til en øget indsigt i bruger-forståelsen af vores hidtil produkt. Opgaverne opstilles som simple instrukser uden hjælpe, og hvor vi som test-ansvarlige har forudbestemte succeskriterier for opgaverne, som testpersonen ikke har kendskab til. Dette har til formål at observere brugerens egen intuitation og førstehåndsindtryk af siden. 
+
+
+Her er testpersonens opgave at identicifere potentielle UX-UI uoverstemmelser. Testen blev også set som en slags "fejlfindingsmetode" og som vurdering af sidens validitet i forhold til UX/UI og planlagte programmeringstiltag.
+Den agile arbejdsmetode er benyttet da kravet til løsningen er fast (projektbeskrivelsen), men projektet er samtidig præget af den hybride arbejdsmetode da der stadig er mange ubekende faktorer som har haft indflydelse på forløbet.  
+
+Den simple definition er, at det er en kombination af to forskellige metoder eller systemer, såsom waterfall og agile, for at skabe en ny og bedre projektstyringsmodel.
+
+En hybrid metode, der kombinerer metoder, bruger elementer fra hver af dem for at øge effektiviteten gennem hele softwareudviklingslivscyklussen.
+
+
+
+
+
+
+
+
+
+!!! PROGRAMMERING !!!
+
+Det skyldes at for mange indlejrede div'er kan føre til en udfording i vedligeholdelse af kodningen og samtidig være vanskeligt for andre gruppemedlemmer at forstå opbygningen.
+
+Det har derfor været vigtigt for os at kode på en praktisk måde der er med til at danne en logisk og organiseret struktur. Det har vi forsøgt at gøre ved at bruge klare child-selectors på parent elementer i CSS. 
+
+
+Vi har også haft JavaScript kodningen i overvejelsen, under konstruktionen af HTML'siderne, forstået på den måde at vi tidligt i kodningsfasen, besluttede at anvende classes frem for ID. Når en klar plan for JavaScript kodningen var plads, ændres de pågældende classes om til ID, der hvor JavaScript koden skulle implementeres. 
+
+
+
+Stylingen har uundgåeligt båret præg af gruppens forskellige arbejdsstile, som til tider har været en udfordrende faktor. Selvom målet med stylingen er ens, så findes der forskellige veje der føre til det samme visuelle/funktionelle udtryk.
+
+Det ses f.eks. i brugen af margin, hvor f.eks. både margin-top:, margin-top:auto og margin-top: - er brugt forskellige steder i CSS'en. I forlængelse af dette, har brugen af procent vs. pixel også været omdiskuteret. Derfor opleves der muligvis få steder hvor kode "stilen" ikke altid virker konsistent.
+
+
+De forskellige display-betegnelserne er brugt i forskellige sammenhænge, men de anvendes alle i stor grad i forbindelse med JavaScript kodningen.
+Det ses f.eks. når et element skal aktiveres og dermed blive synlig i JavaScript kodningen, er det vigtigt at det pågældende element har en display:none i CSS (figur 24)
+Display: flex er hovedsagligt anvendt på baggrund af de "avancerede" layoutmuligheder som denne tilbyder (figur 24).
+
+Valget af display elementerne afgøres på baggrund af stylingens formål og besluttes også baggrund af vores "kodningsplaner" (figur 23).  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

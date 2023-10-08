@@ -28,7 +28,6 @@ infoknapper.forEach(function(åbenBox) {
 function visBox(){
      indhold = this.nextElementSibling;
      indhold.style.display = "inline";
-    //  indhold.style.animationName = "openup";
  }
 
 
