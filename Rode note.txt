@@ -12,3 +12,35 @@ Login-logo skal linke til Prisoversigt.
 Hvorfor har vi ikke lavet en login-side.
 Læs mere - link til 404
 
+
+Rapporten: 
+- Metode afsnit
+- Design: de 2-3 løsninger: Dumpling ikoner/emblem og .gif.
+- Programmering
+
+
+
+Kodning:
+- Prisoversigt skal splittes i 2.
+
+	- Bestillingsoversigt: Knap "vælg din måltidskasse" --> "Se udvalg".
+	- Prisoversigt: Efter "Se udvalg" --> Knap "Bestil din måltidskasse" --> Prisoversigt -->  
+
+- Forsiden's "Bestil" knap --> "Bestillingsoversigt".
+
+- Login skal hedde "Profil".
+- Sikre at alle sider har den samme header og footer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
