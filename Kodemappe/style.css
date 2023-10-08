@@ -1278,11 +1278,17 @@ body {
 .dumplingTal {
     display: flex;
     gap: 7%;
-    height: 33px;
+    height: 50px;
 }
 .dumplingTal img {
     width: 20px;
     height: 20px;
+}
+
+#dump7 {
+    width: 20px;
+    height: auto;
+    margin-bottom: 20px;
 }
 
 /**
