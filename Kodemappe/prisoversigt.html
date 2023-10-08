@@ -31,21 +31,6 @@
         <section class="oversigtbox">
             <img class="prisimg" src="billeder/ikoner/tidslinje/tidslinje1.png" alt="Dumpling evolution">
             
-            <div class="personInfo">
-                <h4>Dine oplysninger</h4>
-                <p class="infotittle">Navn</p>
-                <p>Anders Andersen</p>
-                <p class="infotittle">Adresse</p>
-                <p>Gammel byvej72</p>
-                <p class="infotittle">Post nr. og by</p>
-                <p>4681 Herfølge</p>
-                <p class="infotittle">tlf. nr.</p>
-                <p>+45 4186 0986</p>
-                <p class="infotittle">Email</p>
-                <p>andersandersen@outlook.dk</p>
-                <p class="infotittle">Ret oplysninger</p>
-            </div>
-
             <div class="antal">
                 <h4>Vælg antal personer og opskrifter</h4>
                 <div class="antalInfo">
@@ -87,60 +72,29 @@
 
             <div class="madpakker">
                 <h4>Madpakker</h4>
-                <div class="voksenMadpakker">
+            <div class="voksenMadpakker">
+                
+                
+                <div class="antalMadpakker">
                     <p>Voksne</p>
-                
-                <div>
                     <p>
-                        <button onclick="totalClick(1)">+</button>
-                        <span id="totalClick">0</span>
                         <button onclick="totalClick(-1)">-</button>
+                        <span id="totalClick">0</span>
+                        <button onclick="totalClick(1)">+</button>
                     </p>
                 </div>
 
-                <div class="børnMadpakker">
-                    <p>børn</p>
+                <div class="antalMadpakker">
+                    <p>Børn</p>
                 
                 <div>
                     <p>
-                        <button onclick="totalClick(1)">+</button>
-                        <span id="totalClick">0</span>
-                        <button onclick="totalClick(-1)">-</button>
+                        <button onclick="totalClickb(-1)">-</button>
+                        <span id="totalClickb">0</span>
+                        <button onclick="totalClickb(1)">+</button>
                     </p>
                 </div>
-
             </div>
-
-
-
-
-
-
-
-
-
-
-            <!--- <div class="madpakker">
-                <h4>Madpakker</h4>
-                <table>
-                    <tr>
-                        <td>
-                            Voksne
-                        </td>
-                        <td>
-                            Knap
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Børn
-                        </td>
-                        <td>
-                            Knap
-                        </td>
-                    </tr>
-                </table>
-            </div> -->
 
             <hr>
 
@@ -148,7 +102,7 @@
                 <h4>Prisoversigt</h4>
             <table>
                 <tr>
-                    <td>x st. Serveringer</td>
+                    <td class="bold">x st. Serveringer</td>
                     <td></td>
                 </tr>
                 <tr>
@@ -160,15 +114,15 @@
                     <td>xx kr.</td>
                 </tr>
                 <tr>
-                    <td>x st. Madpakker</td>
+                    <td class="bold">x st. Madpakker</td>
                     <td></td>
                 </tr>
                 <tr>
-                    <td>x st. Madpakker voksne</td>
+                    <td>x stk. Madpakker voksne</td>
                     <td>xx kr.</td>
                 </tr>
                 <tr>
-                    <td>x st. Madpakker Børn</td>
+                    <td>x stk. Madpakker Børn</td>
                     <td>xx kr.</td>
                 </tr>
             </table>
@@ -183,17 +137,17 @@
                         <td>xx kr.</td>
                     </tr>
                     <tr>
-                        <td>Gennemsnitspris per person</td>
-                        <td>xx kr.</td>
+                        <td class="italic">Gennemsnitspris per person</td>
+                        <td class="italic">xx kr.</td>
                     </tr>
                     <tr>
-                        <td>Levering</td>
-                        <td>xx kr.</td>
+                        <td class="italic">Levering</td>
+                        <td class="italic">xx kr.</td>
                     </tr>
                 </table>
             </div>
 
-            <div class="total">
+            <div class="total bold">
                 <table>
                     <tr>
                         <td>TOTAL</td>
@@ -207,8 +161,8 @@
             </div>
 
             <div class="rabat">
-                <input type="Indløs rabatkode">
-                <a href="#">Indløs</a>
+                <input type="Indløs rabatkode" placeholder="Rabatkode">
+                <a href="#">Indløs</label></a>
             </div>
 
             <hr>
@@ -235,60 +189,52 @@
             </div>
 
         </section>
-
-        
-
-
-    </main>
-
-
-
-    <footer>
+    </main> 
+<footer>
     
-        <div class="footerLOGO">
-            <img src="billeder/logo/dombling_logo.png" alt="Logo">
+    <div class="footerLOGO">
+        <img src="billeder/logo/dombling_logo.png" alt="Logo">
+    </div>
+
+    <div class="række1">
+        <h5>NIPPON Måltidskasser</h5> <br>
+        <a href="404.html">Ringvej syd 104
+            8260 Viby J
+            <br>
+            Tlf: +45 11 22 33 44
+            <br>
+            Email: Kundeservice@nippon.dk
+        </a>
+    </div>
+
+    <div class="række2">
+        <h5>Pratisk info</h5> <br>
+        <a href="404.html">Levering
+            <br>
+            Betaling
+            <br>
+            Vores råvare
+            <br>
+            Bæredygtighed 
+        </a>
+    </div>
+
+    <div class="række3">
+        <h5>Andet</h5> <br>
+        <a href="404.html">Ofte stillede spørgsmål 
+            <br>
+            Om os 
+        </a>
+        <div class="some">
+            <a href="404.html"><img class="footerIkoner" src="billeder/ikoner/medier/tik-tok.png" alt="tiktok"></a>
+            <a href="404.html"><img class="footerIkoner" src="billeder/ikoner/medier/email.png" alt="email"></a>
+            <a href="404.html"><img class="footerIkoner" src="billeder/ikoner/medier/facebook.png" alt="facebook"></a>
+            <a href="404.html"><img class="footerIkoner" src="billeder/ikoner/medier/instagram.png" alt="instagram"></a>
+            <a href="404.html"><img class="footerIkoner" src="billeder/ikoner/medier/tlf.png" alt="telefon"></a>
         </div>
-    
-        <div class="række1">
-            <h5>NIPPON Måltidskasser</h5> <br>
-            <a href="404.html">Ringvej syd 104
-                8260 Viby J
-                <br>
-                Tlf: +45 11 22 33 44
-                <br>
-                Email: Kundeservice@nippon.dk
-            </a>
-        </div>
-    
-        <div class="række2">
-            <h5>Pratisk info</h5> <br>
-            <a href="404.html">Levering
-                <br>
-                Betaling
-                <br>
-                Vores råvare
-                <br>
-                Bæredygtighed 
-            </a>
-        </div>
-    
-        <div class="række3">
-            <h5>Andet</h5> <br>
-            <a href="404.html">Ofte stillede spørgsmål 
-                <br>
-                Om os 
-            </a>
-            <div class="some">
-                <a href="404.html"><img class="footerIkoner" src="billeder/ikoner/medier/tik-tok.png" alt="tiktok"></a>
-                <a href="404.html"><img class="footerIkoner" src="billeder/ikoner/medier/email.png" alt="email"></a>
-                <a href="404.html"><img class="footerIkoner" src="billeder/ikoner/medier/facebook.png" alt="facebook"></a>
-                <a href="404.html"><img class="footerIkoner" src="billeder/ikoner/medier/instagram.png" alt="instagram"></a>
-                <a href="404.html"><img class="footerIkoner" src="billeder/ikoner/medier/tlf.png" alt="telefon"></a>
-            </div>
-        </div>
-    
-    </footer>
+    </div>
 
+</footer>
     
 </body>
 </html>
