@@ -74,13 +74,14 @@ protein.style.display = "flex";
 // så skal hele diven, den der hedder "retter" (card i HTML)
 // få en rød border.
 
-//Det fungere hvis det er billedet der skal have en border.
-//Hvis det er hele diven ("card"), så fungere det ikke - hmm...
 
 // Virker kun på det første billed!
 
 let billedet = document.getElementById("retten");
 let retten2 = document.getElementById("retten2");
+
+
+
 let retter = document.getElementById("cardID");
 let vælge2Retter = document.getElementById("retterBaggrund");
 let grønneKasse = document.getElementById("rettensNavn");
@@ -94,6 +95,9 @@ retter.addEventListener("click", rødMarkering);
 function rødMarkering(){
 
   if(retter1){
+    retter.style.borderTop = "10px";
+
+
     retter.style.borderTop = "10px";
     retter.style.borderLeft = "10px";
     retter.style.borderRight = "10px";

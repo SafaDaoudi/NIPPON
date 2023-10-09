@@ -72,4 +72,3 @@ function visforrigeBillede() {
         sidstefoto.style.order = '3';
     }
 }
-

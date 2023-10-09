@@ -378,6 +378,38 @@ body {
 }
 
 
+.opKnap{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 72%;
+    padding-bottom: 20px;
+    gap: 10px;
+
+}
+
+.opKnap a{
+    text-decoration:none;
+    font-family: 'titweb-semibold';
+    color: #45acA5;
+}
+
+.opKnap a:hover{
+    text-decoration: underline;
+}
+
+.opKnap img{
+    width: 30px;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -516,19 +548,22 @@ body {
     
     background-color: rgb(255, 255, 255);
 
-    width: 450px;
+    width: 454px;
     height: 580px;
     
     /* for placeringen af den store div */
     left: 20%;
     top: -100px;
 
-    border-radius: 15px 15px 15px 15px;
+    border-radius: 15px;
 
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
     z-index: 20;
+    
+    border: solid 2px #45ACA5;
  }
+
 
 #indholdpopup h1{
     display: flex;
@@ -554,6 +589,10 @@ body {
     color: #27406B;
     font-family: 'Dosis-regular';
     font-size: 12pt;
+}
+
+
+#lillefoto{
 }
 
 #farvorit {
@@ -665,8 +704,33 @@ body {
  }
 
 
- .tilbageKnap a{
+ #tilbageText a{
     text-decoration: none;
+    font-family: 'titweb-semibold';
+    color: #27406b;
+ }
+
+ #tilbageText a:hover{
+    display: inline-block;
+    position: relative;
+ }
+
+ #tilbageText a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+ }
+
+ #tilbageText a:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
  }
  .tilbageKnap img{
     display: flex;
@@ -710,7 +774,13 @@ body {
 
  .cards img{
     border-radius: 10px;
+    
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 
+ }
+
+ #retten{
+    background-color: green;
  }
 
  .card {
@@ -735,12 +805,16 @@ body {
     margin-top: 0px;
     right: 9px;
     border-radius: 0px;
+
+    box-shadow: 0px 4px 10px rgba(0, 0,0, 0.5);
   }
  
  
  .card p{
     font-family: 'titweb-semibold';
     color:#f8efe3;
+    text-align: left;
+    margin-left: 10px;
  }
 
 
@@ -751,7 +825,7 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     position: absolute;
-    background-color: #45acA5;
+    background-color: #45ACA5;
     
     border-radius: 0px 0px 10px 10px;
     
@@ -770,8 +844,8 @@ body {
 
 #infoknap{
     width: 8%;
-    margin-top: -11%;
-    margin-left: 90%;
+    margin-bottom: 2%;
+    margin-left: 85%;
     position: absolute;}
 
 #infoknap:hover{
@@ -779,7 +853,6 @@ body {
     transform: scale(1.4);
     transition: 0.5s;
 }
-
 
 
 
@@ -808,11 +881,6 @@ body {
 
  }
 
-.oversigtbox {
-    width: 40%;
-    background-color: #f2dcba;
-    padding-top: 10px;
-}
 
 .antal {
     display: flex;
@@ -833,7 +901,7 @@ body {
     margin-left: auto;
     margin-top: 2%;
     margin-bottom: 2%;
-    width: 60%;
+    width: 90%;
 }
 
 .antal td {
@@ -875,20 +943,34 @@ body {
     height: 40px;
 }
 
+
 .total {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+   
+    margin-right: auto;
+    margin-left: auto;
+   
     padding-top: 5px;
     padding-bottom: 5px;
     margin-bottom: 30px;
+    
     background-color: #45acA5;
+    width: 40%;
 }
 .total td {
-    width: 90%;
-    height: 40px;
+    width: 80%;
+    height: 30px;
+    color: #f8efea;
 }
+
+
+
+
+
+
 
 .vælgRetterBtn {
     display: flex;
@@ -911,6 +993,7 @@ body {
     align-items: center;
     text-align: center;
     color: #FAFAFA;
+    font-family: 'Dosis-semibold';
 }
 
 .opsumering h1 {
@@ -927,7 +1010,7 @@ body {
 }
 
 .opsumering p{
-    width: 60%;
+    width: 100%;
     line-height: 15pt;
 }
 
@@ -991,6 +1074,15 @@ body {
     margin: auto;
     font-family: 'Dosis-bold';
 }
+
+.kvitteringMain{
+    font-family: 'titweb-regular';
+}
+
+.bestilingIalt span{
+    text-decoration:underline double;
+}
+
 
 .italic {
     font-style: italic;
@@ -1071,6 +1163,7 @@ body {
 .betalbtn a {
     color: #FAFAFA;
     text-decoration: none;
+    font-family: 'Dosis-semibold';
 }
 
 .Altbetalbtn {
@@ -1091,6 +1184,8 @@ body {
 .Altbetalbtn a {
     color: #FAFAFA;
     text-decoration: none;
+    font-family: 'Dosis-semibold';
+
 }
 
 /***** BESTILING *****/
@@ -1101,6 +1196,9 @@ body {
     align-items: center;
     padding-top: 84px;
     font-family: 'Dosis-regular';
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .oversigtMain h4 {
@@ -1120,9 +1218,13 @@ body {
     margin-right: auto;
     margin-left: auto;
     height: 2px;
-    width: 50%;
+    width: 90%;
     background-color: #45acA5;
     border: none;
+}
+
+#prisoversigt2HR{
+    width: 70%;
 }
 
 .oversigtbox {
@@ -1191,12 +1293,12 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 15px;
+    gap: 5px;
     height: 80px;
 }
 
 .dumplingTal img {
-    width: 40px;
+    width: 25px;
 }
 
 .dumplingTal7 img {
@@ -1209,11 +1311,11 @@ body {
     align-items: center;
     height: 100%;
 
-    padding-bottom: 25px;
+    padding-bottom: 15px;
 }
 
 #dump7 {
-    width: 40px;
+    width: 25px;
     /* height: auto; */
     /* margin-bottom: 20px; */
 }
@@ -1250,6 +1352,21 @@ body {
     margin-bottom: 2%;
 }
 
+.antalMadpakker button{
+    display: inline;
+    cursor: pointer;
+    
+    background-color: #45acA5;
+    color: #f8efe3;
+    border: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 45px;
+
+    font-family: 'titweb-bold';
+    font-size: 5pt;
+}
+
 .prisoversigt {
     display: flex;
     justify-content: center;
@@ -1265,23 +1382,6 @@ body {
     height: 40px;
 }
 
-.total {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: auto;
-    margin-left: auto;
-   
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-bottom: 30px;
-    background-color: #45acA5;
-    width: 25%;
-}
-.total td {
-    width: 89%;
-    height: 40px;
-}
 
 .vælgRetterBtn p {
     display: flex;
@@ -1297,7 +1397,7 @@ body {
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    width: 25%;
+    width: 50%;
     padding-bottom: 5%;
     background-color: transparent;
 
@@ -1373,6 +1473,8 @@ body {
     margin-right: auto;
     text-align: center;
     margin-bottom: 2%;
+
+    font-family: 'titweb-regular';
 }
 .kvitteringimg {
     display: flex;
@@ -1383,45 +1485,6 @@ body {
     margin-bottom: 2%;
 }
 
-.bestiling {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    width: 80%;
-    gap: 15%;
-    margin: auto;
-    line-height: 35pt;
-}
-.bestiling img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-}
-
-.bestilingRabat {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    width: 80%;
-    gap: 70%;
-    margin: auto;
-    line-height: 35pt;
-    font-style: italic;
-}
-
-.bestilingIalt {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    width: 80%;
-    gap: 70%;
-    margin: auto;
-    font-family: 'Dosis-bold';
-}
 
 .forsidebtn {
     display: flex;
