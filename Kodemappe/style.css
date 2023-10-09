@@ -445,9 +445,6 @@ body {
     align-items: flex-end;
     top: 200px;
     right: 0;
-
-    opacity: 0.5;
-
  }
  
  .allergi {
@@ -589,10 +586,6 @@ body {
     color: #27406B;
     font-family: 'Dosis-regular';
     font-size: 12pt;
-}
-
-
-#lillefoto{
 }
 
 #farvorit {
