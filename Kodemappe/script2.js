@@ -88,29 +88,32 @@ let grønneKasse = document.getElementById("rettensNavn");
 
 
 
-let billede1 = true;
-billedet.addEventListener("click", rødMarkering);
+let retter1 = true;
+retter.addEventListener("click", rødMarkering);
 
 function rødMarkering(){
 
-  if(billede1){
-    billedet.style.borderTop = "0px";
-    billedet.style.borderLeft = "0px";
-    billedet.style.borderRight = "20px";
-    billedet.style.borderBottom = "0px";
-    billedet.style.borderStyle = "solid";
-    billedet.style.borderColor = "#27406B";
-    billedet.style.borderRadius = "14px";
-    billede1 = false;
+  if(retter1){
+    retter.style.borderTop = "10px";
+    retter.style.borderLeft = "10px";
+    retter.style.borderRight = "10px";
+    retter.style.borderBottom = "10px";
+    retter.style.borderStyle = "solid";
+    retter.style.borderColor = "#FF6c5c";
+    retter.style.borderRadius = "20px";
+   
+    // retter.style.backgroundColor = "red";
+    // retter.style.padding = "10px"; 
+    retter1 = false;
   }
   else{
-  billedet.style.borderTop = "0px";
-  billedet.style.borderLeft = "0px";
-  billedet.style.borderRight = "0px";
-  billedet.style.borderBottom = "0px";
-  billedet.style.borderStyle = "none";
-  billedet.style.borderColor = "transparent";
-  billede1 = true;
+  retter.style.borderTop = "0px";
+  retter.style.borderLeft = "0px";
+  retter.style.borderRight = "0px";
+  retter.style.borderBottom = "0px";
+  retter.style.borderStyle = "none";
+  retter.style.borderColor = "transparent";
+  retter1 = true;
   }
   
 }

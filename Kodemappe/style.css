@@ -395,15 +395,15 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    background-image: url(billeder/bagimg.png);
+    background-size: cover;
 
-    /* background-color: #fff9ee; */
-    border: solid #45acA5 2px;
-    
-    width: 72%;
+    width: 60%;
  
     padding-bottom: 50px;
     padding-top: 7%;
  }
+
  
  .småbtn {
     position: fixed;
