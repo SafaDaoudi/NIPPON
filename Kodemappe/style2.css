@@ -71,7 +71,7 @@ nav a {
 
 .loginClass {
   width: 50px;
-  margin-left: 10%;
+  margin-left: 11%;
   display: flex;
   position: relative;
   justify-content: center;
@@ -80,8 +80,7 @@ nav a {
 
 
 #udvalgNav {
-  margin-right: 490px;
-
+  margin-right: 35.7%;
 }
 
 #udvalgNav:hover {

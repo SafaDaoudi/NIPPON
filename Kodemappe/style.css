@@ -349,35 +349,45 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
     width: 72%;
     padding-bottom: 20px;
     gap: 10px;
-
+    text-decoration: none;
 }
 
-.opKnap a{
-    text-decoration:none;
+#opknapText{
+    text-decoration: none;
     font-family: 'titweb-semibold';
     color: #45acA5;
 }
 
-.opKnap a:hover{
-    text-decoration: underline;
+#opknapText:hover{
+    display: inline-block;
+    position: relative; 
+    /* text-decoration: underline black; */
+}
+
+ #opknapText::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #45ACA5;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+ }
+
+ #opknapText:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 .opKnap img{
     width: 30px;
 }
-
-
-
-
-
-
-
-
-
 
 
 
