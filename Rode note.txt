@@ -89,9 +89,68 @@ Det ses f.eks. når et element skal aktiveres og dermed blive synlig i JavaScrip
 Display: flex er hovedsagligt anvendt på baggrund af de "avancerede" layoutmuligheder som denne tilbyder (figur 24).
 
 Valget af display elementerne afgøres på baggrund af stylingens formål og besluttes også baggrund af vores "kodningsplaner" (figur 23).  
+______________________________________________________________________
+
+.tilbageKnap{
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   
+   
+   gap: 5px;
+   width: 70%;
+   margin-right: 150px;
+   padding-top:1%;
+   padding-bottom: 1%;
+   
+   font-family: 'titweb-regular';
+   font-size: 1.5vh;
+   color: #27406b;
+ }
+
+
+ #tilbageText{
+    text-decoration: none;
+    font-family: 'titweb-semibold';
+    color: #27406b;
+ }
+
+ #tilbageText:hover{
+    display: inline-block;
+    position: relative;
+ }
+
+ #tilbageText::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #45ACA5;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+ }
+
+ #tilbageText:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+ }
+ .tilbageKnap img{
+    display: flex;
+    justify-content: center;
+    width: 20px;
+    
+ } 
 
 
 
+Som del af vores research processe, er det bemærket at valgmuligheder spiller en stor rolle for børns spiservaner. Dette udspiller sig også i vores idéløsning, hvor retter kan til- eller fravælges på baggrund af retterens indhold.  
+
+EXTRA
+
+På baggrund af den nyerhvervede viden indenfor måltidskasser, samt baggrundsforståelsen for danske børnefamiliers hverdag, kan der konkluderes at der fra NIPPONs side ikke er behov for videreudvikling af måltidskasser til morgenmad og frokoster.    
 
 
 
