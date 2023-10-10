@@ -108,12 +108,8 @@ body {
     width: 100%;
 }
 
-<<<<<<< HEAD
-#bestilbtn {
-=======
 
 .bestilbtn {
->>>>>>> 88e7c20d1a152c50b7347b9e6b9daae4d4086fea
     display: flex;
     justify-content: center;
     align-items: center;
