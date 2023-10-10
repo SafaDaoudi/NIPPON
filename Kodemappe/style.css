@@ -109,32 +109,6 @@ body {
 }
 
 
-.bestilbtn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 400px;
-    height: 50px;
-    width: 150px;
-    background-color: #FAFAFA;
-    border: solid #ff6c5c 2px;
-    border-radius: 10px; 
-    
-    text-decoration: none;
-    color: #27406b;
-    font-family: 'Dosis-bold';
-    font-size: 2vh;
-}
-
-
-#bestilbtn:hover{
-    cursor: pointer;
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Safari 3-8 */
-    transform: scale(1.1);
-    transition: 1s;
-}
-
 
 /****** SECTION:oplevelser *****/
 
@@ -530,7 +504,7 @@ body {
     left: 20%;
     top: -100px;
 
-    border-radius: 15px;
+    border-radius: 16px;
 
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
@@ -572,13 +546,13 @@ body {
     text-align: center;
     background-color: #27406B;
 
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 0px 15px 0px 10px;
     height: 50px;
 
     font-size: 15pt;
     z-index: 30;
+    margin-top: -306px;
 
-    margin-top: -304px;
     right: 0px;
 }
 
@@ -609,6 +583,15 @@ body {
     display: none;
     height: 470px;
     background-color: white;
+
+
+    width: 451.5px;
+    border: solid 2px;
+    border-color: #45acA5;
+    border-top-color: transparent;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
   }
   
   #collapsible-content img{
@@ -657,6 +640,9 @@ body {
 
 
  /*** BILLEDE KATALOG ***/
+
+
+
  /* Placering og styling af tilbage-knappen */
  .tilbageKnap{
    display: flex;
@@ -710,6 +696,74 @@ body {
     width: 20px;
     
  } 
+
+
+/***** TILBAGE KNAP PRISOVERSIGT *****/
+
+.tilbageKnapPrisOversigt{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+    
+    gap: 5px;
+    width: 100px;
+    
+    margin-bottom: 800px;
+
+    padding-top:1%;
+    padding-bottom: 1%;
+    
+    font-family: 'titweb-regular';
+    font-size: 1.5vh;
+    color: #27406b;
+  }
+ 
+ 
+  #tilbageText{
+     text-decoration: none;
+     font-family: 'titweb-semibold';
+     color: #27406b;
+  }
+ 
+  #tilbageText:hover{
+     display: inline-block;
+     position: relative;
+  }
+ 
+  #tilbageText::after{
+     content: '';
+     position: absolute;
+     width: 100%;
+     transform: scaleX(0);
+     height: 1px;
+     bottom: 0;
+     left: 0;
+     background-color: #45ACA5;
+     transform-origin: bottom right;
+     transition: transform 0.25s ease-out;
+  }
+ 
+  #tilbageText:hover::after{
+     transform: scaleX(1);
+     transform-origin: bottom left;
+  }
+  .tilbageKnapPrisOversigt img{
+     display: flex;
+     justify-content: center;
+     width: 20px;
+     
+  } 
+
+
+
+
+
+
+
+
+
+
  
  #tidslinje2{
     width: 350px;
@@ -792,7 +846,7 @@ body {
 
 
 
-.korttekst{
+ .korttekst{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -828,38 +882,102 @@ body {
 
 
 
-/* Styling af knapper*/
+/** test **/
+.test {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
 
- #planlægbtn{
-    padding: 15px 0px 0px 55px;
-    
-    text-decoration: none;
-    color: #fef8ea;
-    font-family: 'Dosis-bold';
-    font-size: 2.7vh;
-    
+/* .korttekst {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: absolute;
+    background-color: #45ACA5;
+
+    border-radius: 0px 0px 10px 10px;
+
     width: 200px;
-    height: 55px;
-    margin-left: auto;
-    margin-right: auto;
-    
-    border: solid 1px #ff6c5c;
-    border-radius: 15px;
-    background-color: #27406b;
- }
+    height: 50px;
+    padding-left: 5px;
+    margin-top: 250px;
+    justify-content: center;
+} */
+
+.korttekst2 {
+    display: flex;
+    flex-wrap: wrap;
+
+    font-family: 'titweb-semibold';
+    color: #f8efea;
+    flex-direction: column;
+    position: absolute;
+    background-color: #45ACA5;
+
+    border-radius: 0px 0px 10px 10px;
+
+    width: 200px;
+    height: 50px;
+    padding-left: 5px;
+    justify-content: center;
+    /* margin-bottom: 5px; */
+    z-index: 1;
+}
+
+#infoknap2 {
+    width: 8%;
+    margin-bottom: 2cqh;
+    margin-left: 85%;
+    position: absolute;
+}
+
+#infoknap2:hover {
+    cursor: pointer;
+    transform: scale(1.4);
+    transition: 0.5s;
+}
+
+#lillefoto {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-right: 1px;
+}
+
+#rettensNavn2 {
+    margin-left: 5px;
+}
+/**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* STYLING AF KNAPPER */
+
 
 #bestilKnap{
-    padding: 13px 0px 0px 40px;
+    padding: 13px;
     
     text-decoration: none;
     color: #fef8ea;
     font-family: 'Dosis-bold';
-    font-size: 2.75vh;
+    font-size: 15pt;
     
-    width: 250px;
-    height: 55px;
-    margin-left: auto;
-    margin-right: auto;
     
     border: solid 1px #ff6c5c;
     border-radius: 15px;
@@ -915,6 +1033,35 @@ body {
     color: #FAFAFA;
     font-family: 'Dosis-semibold';
 }
+
+
+#bestilbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 400px;
+    height: 50px;
+    width: 150px;
+    background-color: #FAFAFA;
+    border: solid #ff6c5c 2px;
+    border-radius: 10px; 
+    
+    text-decoration: none;
+    color: #27406b;
+    font-family: 'Dosis-bold';
+    font-size: 2vh;
+}
+
+
+#bestilbtn:hover{
+    cursor: pointer;
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+
 /***** SLUT STYLING AF KNAPPER ****/
 
 
@@ -1208,7 +1355,7 @@ body {
     align-items: center;
     padding-top: 84px;
     font-family: 'Dosis-regular';
-    width: 40%;
+    width: 54%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -1240,7 +1387,7 @@ body {
 }
 
 .oversigtbox {
-    width: 72%;
+    width: 60%;
     padding-top: 10px;
     background-image: url(billeder/bagimg.png);
     background-size: cover;
@@ -1543,29 +1690,5 @@ body {
   .fejlSide h4 {
     font-family: 'titweb-regular';
     font-size: 24px;
-    margin-top: 50px;
-  }
-  
-  .fejlSide  a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-family: 'Dosis-semibold';
-
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  
-    width: 260px;
-    height: 46px;
-    flex-shrink: 0;
-    border-radius: 10px;
-    color: var(--Lys-beige, #FEFAEE);
-    border: 2px solid var(--rd-orange, #ff6c5c);
-    background: var(--mrkebl-dyb-kongebl, #27406b);
-    text-decoration: none;
-
     margin-top: 50px;
   }
